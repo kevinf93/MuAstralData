@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2020 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ResetSystem ###
+//	Enable: Activates or deactivates the system, 0/1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If enabled the old reset system from Common.ini will be automatucally disabled.
+//~~ To allow smooth switch to new system we will keep old reset system for next few updates
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ResetSystem::Requirements ###
+//	MinLevel: Minimum regular level to perform reset
+//	Cost: Cost of the reset in Zen, max value: 200000000
+//	MultiplyCostPerResets: Multiply cost by number of resets, 0/1
+//	MaxCost: maximum cost of reset in Zen, max value: MaxCost
+//	MaxReset: Maximum number of resets
+//
+// ### ResetSystem::Settings ###
+//	RemoveEquipment: Determines whether equipment removal is required before performin reset, 0/1
+//	RemoveFromParty: Determines whether to remove from party after reset, 0/1
+//	EnableMuHelper: Determines whether enable the MuHelper back after reset, 0/1
+//	ClearBuffs: Determines whether to clear existing buffs after reset, 0/1
+//	ResetStats: Determines whether to reset character stats after reset, 0/1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Enablin that option will auto force moving to character selection screen after reset
+//~~ Stat points for all passed milestones will be calculated and returned as free Level Up Points
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	SaveOldStatPoint: Determines whether to preserve pre-reset free stat points, 0/1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Option active only if ResetStats enabled.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ResetMasterLevel: Determines whether to reset master level, 0/1
+//	MoveToCharSelectWindow: Determines whether to force move to character selection screen after reset, 0/1
+//	StayOnPosition: Determines whether character should keep the same position after reset, 0/1
+//	MaxResetPoints: Maximum number of free level up points after reset
+//	LevelAfterRese: Regular level to set after reset, minimum value is 1, free stat points are calculated and added automatically
+//	MasterLevelAfterReset: Master level to set after reset, used if set greater than 0, free stat points are calculated and added automatically
+//
+// ### ResetSystem::DynamicResetRangeList::Range ###
+//	MinReset: Minimum number of resets for actual range
+//	MaxReset: Maximum number of resets for actual range, if MAX is used then it is set to value of MaxReset
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ It is important to keep MaxReset higher than MinReset and make sure all ranges are unique and ordered increasing way
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	MilestoneID: A milestone reset rule ID to execute upon reset, -1 if do milestone aplies to specific range, see MilestonesRewardList section
+//	RewardSetID: A regular reset rule ID to execute upon reset, -1 if do milestone aplies to specific range, see RegResetsRewardList section
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ All MilestoneID and RewardSetID should be configured increasing way without numbering gaps, -1 if rule does not apply to specific range
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ResetSystem::RegResetsRewardList::Reward ###
+//	Id: Unique ID of the reward rule
+//	WCoin: Number of WCoins to award with, 0 to disable
+//	GP: Number of GP to award with, 0 to disable
+//	Zen: Number of Zen to award with, 0 to disable
+//	Ruud: Number of Ruud to award with, 0 to disable
+//	LevelUpPoints: Number of Level Up points to award with, 0 to disable
+//	MultiplyPointByReset: If enabled the LevelUpPoints are multipled by number of resets, 0/1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For VIP players the value of PointPerResetBonus from VIPSettings.xml is added before being multiplied
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ContributePoints: Gens contribute points to award, applies only for gens fsamily members
+//	ItemBagID: ID of event item bag type defined in ItemBagScript.lua, -1 if not applies
+//
+// ### ResetSystem::MilestonesRewardList::Reward ###
+//	Id: Unique ID of the milestone reward rule
+//	WCoin: Number of WCoins to award with, 0 to disable
+//	GP: Number of GP to award with, 0 to disable
+//	Zen: Number of Zen to award with, 0 to disable
+//	Ruud: Number of Ruud to award with, 0 to disable
+//	LevelUpPoints: Number of Level Up points to award with, 0 to disable
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For milestone resets the LevelUpPoints are awarded as one time points and are not multiplied by resets
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ContributePoints: Gens contribute points to award, applies only for gens fsamily members
+//	ItemBagID: ID of event item bag type defined in ItemBagScript.lua, -1 if not applies
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+//
+-->
+
+<ResetSystem Enable="1">
+<Requirements MinLevel="400" Cost="10000000" MultiplyCostPerResets="1" MaxCost="50000000" MaxReset="0" />
+<Settings RemoveEquipment="0" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="0" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" LevelAfterRese="1" MasterLevelAfterReset="0" />
+
+	<DynamicResetRangeList> <!-- First rule that matches player requirements will be applied, therefore order of entries matters -->
+		<Range MinReset="0" MaxReset="5" MilestoneID="0" RewardSetID="0" />
+	</DynamicResetRangeList>
+	
+	<RegResetsRewardList> <!-- Item issued to Gremory Case -->
+		<Reward Id="0" WCoin="0" GP="0" Zen="0" Ruud="500" LevelUpPoints="0" MultiplyPointByReset="1" ContributePoints="0" ItemBagID="-1" />
+	</RegResetsRewardList>
+	
+	<MilestonesRewardList> <!-- Item issued to Gremory Case -->
+		<Reward Id="0" WCoin="0" GP="0" Zen="0" Ruud="500" LevelUpPoints="0" ContributePoints="0" ItemBagID="-1" />
+	</MilestonesRewardList>
+</ResetSystem>

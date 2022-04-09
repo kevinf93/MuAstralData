@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2018 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MiniMapObjects::TypeOne::Tag ###
+//	Id: Unique ID per MapNumber
+//	MapNumber: Number of a map
+//	NPCIndex: Index of NPC (Monster.xml)
+//	X - Coordinate X
+//	Y - Coordinate Y
+//	DisplayType:
+//		~ 1: Shield Icon
+//		~ 2: Conversation Icon (three dots in cloud)
+//		~ 3: Hammer Icon
+//		~ 4: Elixir Icon
+//		~ 5: Locker Icon
+//		~ 6: UNK
+//	SyncType:
+//		~ 0: Tag is not displayed
+//		~ 1: Tag displayed always
+//		~ 2: Tag displayed only if Monster/NPC present in-Game
+//	Name: Name of Tag to display on Mini Map
+//
+// ### MiniMapObjects::TypeTwo::Tag ###
+//	Id: Unique ID per MapNumber
+//	MapNumber: Number of a map
+//	X - Coordinate X
+//	Y - Coordinate Y
+//	Name: Name of Tag to display on Mini Map
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<MiniMapObjects>
+	<TypeOne />
+	<TypeTwo>
+		<!--Nixie Lake-->
+		<Tag Id="0" MapNumber="113" X="19" Y="64" Name="Gate" />
+	</TypeTwo>
+</MiniMapObjects>

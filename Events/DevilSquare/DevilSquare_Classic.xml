@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ IMPORTANT: The event must have its monsters defined only in DevilSquare_Classic_Monsters.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### DevilSquare_Classic ###
+//	Enable: Allow to activate or disable the event, 0/1
+//	MaxPlayerPerRoom: Maximum players count that can participate each event level in a single cycle
+//
+// ### DevilSquare_Classic::Time ###
+//	Close: Time to close the event after notification period, seconds
+//	ToOpen: Time to open the event from notification moment, minutes
+//	PlayDuration: Duration of the event, minutes
+//
+// ### DevilSquare_Classic::Schedule::Start ###
+//	Hour: Start hour of the event, 0-23
+//	Minute: Start minute of the event, 0-59
+//
+// ### DevilSquare_Classic::EntryLevel::Square ###
+//	Level: Level of the event the the configuration applies to
+//	MinLevel: Minimum level of player to allow entry to specified event level
+//	MaxLevel: Maximum level of player to allow entry to specified event level, max is currently 800
+//
+// ### DevilSquare_Classic::MonsterAppearanceSettings::Square ###
+//	Level: Level of the event the the configuration applies to
+//	MonsterIndex: Index of monster to spawn, see MonsterList.xml
+//	SpawnStartTime: Time of the event (minute) the monster will START spawning at
+//	SpawnEndTime: Time of the event (minute) the monster will STOP spawning at
+//	Name: Name of the monster, used for logging and in-file description purpose
+//
+// ### DevilSquare_Classic::BossAppearanceSettings::Square ###
+//	Level: Level of the event the the configuration applies to
+//	MonsterIndex: Index of monster to spawn, see MonsterList.xml
+//	SpawnTime: Time of the event (minute) the monster will spawn at
+//	StartX: Start X Coordinate the monster will spawn at, must be higher than StartY
+//	StartY: Start Y Coordinate the monster will spawn at, must be lower than StartX
+//	EndX: End X Coordinate the monster will spawn at, must be higher than EndY 
+//	EndY: End Y Coordinate the monster will spawn at, must be lower than EndX
+//	Name: Name of the monster, used for logging and in-file description purpose
+//
+// ### DevilSquare_Classic::RankingBonusSettings::Square ###
+//	Level: Level of the event the the configuration applies to
+//	RankingPlace: Ranking place definition, max 4 per event level, configuration starts from 0
+//	ExpBonus: Exp reward to apply for winning the event at specified place
+//	ZenBonus: Zen reward to apply for winning the event at specified place
+//
+// ### DevilSquare_Classic::RewardExpSettings::Square ###
+//	Level: Level of the event the the configuration applies to
+//	Multiplier: Multiplier of reward exp (received after completing the event)
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<DevilSquare_Classic Enable="1" MaxPlayerPerRoom="15">
+	<Time Close="30" ToOpen="1" PlayDuration="10" />
+
+	<Schedule>
+		<Start Hour="0" Minute="20" />
+		<Start Hour="1" Minute="20" />
+		<Start Hour="2" Minute="20" />
+		<Start Hour="3" Minute="20" />
+		<Start Hour="4" Minute="20" />
+		<Start Hour="5" Minute="20" />
+		<Start Hour="6" Minute="20" />
+		<Start Hour="7" Minute="20" />
+		<Start Hour="8" Minute="20" />
+		<Start Hour="9" Minute="20" />
+		<Start Hour="10" Minute="20" />
+		<Start Hour="11" Minute="20" />
+		<Start Hour="12" Minute="20" />
+		<Start Hour="13" Minute="20" />
+		<Start Hour="14" Minute="20" />
+		<Start Hour="15" Minute="20" />
+		<Start Hour="16" Minute="20" />
+		<Start Hour="17" Minute="20" />
+		<Start Hour="18" Minute="20" />
+		<Start Hour="19" Minute="20" />
+		<Start Hour="20" Minute="20" />
+		<Start Hour="21" Minute="20" />
+		<Start Hour="22" Minute="20" />
+		<Start Hour="23" Minute="20" />
+	</Schedule>
+	
+	<EntryLevel>
+		<Square Level="0" MinLevel="50"  MaxLevel="399" /> <!-- Devil Square 1 -->
+		<Square Level="1" MinLevel="400" MaxLevel="599" /> <!-- Devil Square 2 -->
+		<Square Level="2" MinLevel="600" MaxLevel="699" /> <!-- Devil Square 3 -->
+		<Square Level="3" MinLevel="700" MaxLevel="799" /> <!-- Devil Square 4 -->
+		<Square Level="4" MinLevel="800" MaxLevel="899" /> <!-- Devil Square 5 -->
+		<Square Level="5" MinLevel="900" MaxLevel="999" /> <!-- Devil Square 6 -->
+		<Square Level="6" MinLevel="1000" MaxLevel="MAX" /> <!-- Devil Square 7 -->
+	</EntryLevel>
+	
+	<MonsterAppearanceSettings>
+	<!-- Devil Square 1 -->
+		<Square Level="0" MonsterIndex="84" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 1" />
+		<Square Level="0" MonsterIndex="85" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 1" />
+		<Square Level="0" MonsterIndex="86" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 1" />
+		<Square Level="0" MonsterIndex="86" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 1" />
+		<Square Level="0" MonsterIndex="86" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 1" />
+		<Square Level="0" MonsterIndex="87" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 1" />
+		<Square Level="0" MonsterIndex="87" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 1" />
+		<Square Level="0" MonsterIndex="87" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 1" />
+		<Square Level="0" MonsterIndex="88" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 1" />
+		<Square Level="0" MonsterIndex="88" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 1" />
+		<Square Level="0" MonsterIndex="88" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 1" />
+	<!-- Devil Square 2 -->
+		<Square Level="1" MonsterIndex="90" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 2" />
+		<Square Level="1" MonsterIndex="91" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 2" />
+		<Square Level="1" MonsterIndex="92" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 2" />
+		<Square Level="1" MonsterIndex="92" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 2" />
+		<Square Level="1" MonsterIndex="92" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 2" />
+		<Square Level="1" MonsterIndex="93" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 2" />
+		<Square Level="1" MonsterIndex="93" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 2" />
+		<Square Level="1" MonsterIndex="93" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 2" />
+		<Square Level="1" MonsterIndex="94" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 2" />
+		<Square Level="1" MonsterIndex="94" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 2" />
+		<Square Level="1" MonsterIndex="94" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 2" />
+	<!-- Devil Square 3 -->
+		<Square Level="2" MonsterIndex="96" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 3" />
+		<Square Level="2" MonsterIndex="97" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 3" />
+		<Square Level="2" MonsterIndex="98" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 3" />
+		<Square Level="2" MonsterIndex="98" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 3" />
+		<Square Level="2" MonsterIndex="98" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 3" />
+		<Square Level="2" MonsterIndex="99" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 3" />
+		<Square Level="2" MonsterIndex="99" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 3" />
+		<Square Level="2" MonsterIndex="99" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 3" />
+		<Square Level="2" MonsterIndex="111" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 3" />
+		<Square Level="2" MonsterIndex="111" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 3" />
+		<Square Level="2" MonsterIndex="111" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 3" />
+	<!-- Devil Square 4 -->
+		<Square Level="3" MonsterIndex="113" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 4" />
+		<Square Level="3" MonsterIndex="114" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 4" />
+		<Square Level="3" MonsterIndex="115" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 4" />
+		<Square Level="3" MonsterIndex="115" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 4" />
+		<Square Level="3" MonsterIndex="115" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 4" />
+		<Square Level="3" MonsterIndex="116" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 4" />
+		<Square Level="3" MonsterIndex="116" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 4" />
+		<Square Level="3" MonsterIndex="116" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 4" />
+		<Square Level="3" MonsterIndex="117" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 4" />
+		<Square Level="3" MonsterIndex="117" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 4" />
+		<Square Level="3" MonsterIndex="117" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 4" />
+	<!-- Devil Square 5 -->
+		<Square Level="4" MonsterIndex="119" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 5" />
+		<Square Level="4" MonsterIndex="120" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 5" />
+		<Square Level="4" MonsterIndex="121" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 5" />
+		<Square Level="4" MonsterIndex="121" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 5" />
+		<Square Level="4" MonsterIndex="121" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 5" />
+		<Square Level="4" MonsterIndex="122" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 5" />
+		<Square Level="4" MonsterIndex="122" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 5" />
+		<Square Level="4" MonsterIndex="122" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 5" />
+		<Square Level="4" MonsterIndex="123" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 5" />
+		<Square Level="4" MonsterIndex="123" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 5" />
+		<Square Level="4" MonsterIndex="123" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 5" />
+	<!-- Devil Square 6 -->
+		<Square Level="5" MonsterIndex="125" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 6" />
+		<Square Level="5" MonsterIndex="126" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 6" />
+		<Square Level="5" MonsterIndex="127" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 6" />
+		<Square Level="5" MonsterIndex="127" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 6" />
+		<Square Level="5" MonsterIndex="127" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 6" />
+		<Square Level="5" MonsterIndex="128" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 6" />
+		<Square Level="5" MonsterIndex="128" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 6" />
+		<Square Level="5" MonsterIndex="128" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 6" />
+		<Square Level="5" MonsterIndex="129" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 6" />
+		<Square Level="5" MonsterIndex="129" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 6" />
+		<Square Level="5" MonsterIndex="129" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 6" />
+	<!-- Devil Square 7 -->
+		<Square Level="6" MonsterIndex="138" SpawnStartTime="0" SpawnEndTime="4" Name="Chief Skeleton Warrior 7" />
+		<Square Level="6" MonsterIndex="139" SpawnStartTime="0" SpawnEndTime="5" Name="Chief Skeleton Archer 7" />
+		<Square Level="6" MonsterIndex="140" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 7" />
+		<Square Level="6" MonsterIndex="140" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 7" />
+		<Square Level="6" MonsterIndex="140" SpawnStartTime="4" SpawnEndTime="7" Name="Dark Skull Soldier 7" />
+		<Square Level="6" MonsterIndex="141" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 7" />
+		<Square Level="6" MonsterIndex="141" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 7" />
+		<Square Level="6" MonsterIndex="141" SpawnStartTime="6" SpawnEndTime="9" Name="Giant Ogre 7" />
+		<Square Level="6" MonsterIndex="142" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 7" />
+		<Square Level="6" MonsterIndex="142" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 7" />
+		<Square Level="6" MonsterIndex="142" SpawnStartTime="8" SpawnEndTime="10" Name="Red Skeleton Knight 7" />
+	</MonsterAppearanceSettings>
+
+	<BossAppearanceSettings>
+	<!-- Devil Square 1 -->
+		<Square Level="0" MonsterIndex="89" SpawnTime="8" StartX="119" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 1" />
+		<Square Level="0" MonsterIndex="89" SpawnTime="8" StartX="119" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 1" />
+		<Square Level="0" MonsterIndex="89" SpawnTime="8" StartX="119" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 1" />
+		<Square Level="0" MonsterIndex="89" SpawnTime="8" StartX="119" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 1" />
+		<Square Level="0" MonsterIndex="89" SpawnTime="8" StartX="119" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 1" />
+	<!-- Devil Square 2 -->
+		<Square Level="1" MonsterIndex="95" SpawnTime="8" StartX="121" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 2" />
+		<Square Level="1" MonsterIndex="95" SpawnTime="8" StartX="121" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 2" />
+		<Square Level="1" MonsterIndex="95" SpawnTime="8" StartX="121" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 2" />
+		<Square Level="1" MonsterIndex="95" SpawnTime="8" StartX="121" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 2" />
+		<Square Level="1" MonsterIndex="95" SpawnTime="8" StartX="121" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 2" />
+	<!-- Devil Square 3 -->
+		<Square Level="2" MonsterIndex="112" SpawnTime="8" StartX="54" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 3" />
+		<Square Level="2" MonsterIndex="112" SpawnTime="8" StartX="54" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 3" />
+		<Square Level="2" MonsterIndex="112" SpawnTime="8" StartX="54" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 3" />
+		<Square Level="2" MonsterIndex="112" SpawnTime="8" StartX="54" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 3" />
+		<Square Level="2" MonsterIndex="112" SpawnTime="8" StartX="54" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 3" />
+	<!-- Devil Square 4 -->
+		<Square Level="3" MonsterIndex="118" SpawnTime="8" StartX="49" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 4" />
+		<Square Level="3" MonsterIndex="118" SpawnTime="8" StartX="49" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 4" />
+		<Square Level="3" MonsterIndex="118" SpawnTime="8" StartX="49" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 4" />
+		<Square Level="3" MonsterIndex="118" SpawnTime="8" StartX="49" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 4" />
+		<Square Level="3" MonsterIndex="118" SpawnTime="8" StartX="49" StartY="138" EndX="79" EndY="173" Name="Magic Skeleton 4" />
+	<!-- Devil Square 5 -->
+		<Square Level="4" MonsterIndex="124" SpawnTime="8" StartX="122" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 5" />
+		<Square Level="4" MonsterIndex="124" SpawnTime="8" StartX="122" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 5" />
+		<Square Level="4" MonsterIndex="124" SpawnTime="8" StartX="122" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 5" />
+		<Square Level="4" MonsterIndex="124" SpawnTime="8" StartX="122" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 5" />
+		<Square Level="4" MonsterIndex="124" SpawnTime="8" StartX="122" StartY="152" EndX="151" EndY="184" Name="Magic Skeleton 5" />
+	<!-- Devil Square 6 -->
+		<Square Level="5" MonsterIndex="130" SpawnTime="8" StartX="53" StartY="74" EndX="83" EndY="109" Name="Magic Skeleton 6" />
+		<Square Level="5" MonsterIndex="130" SpawnTime="8" StartX="53" StartY="74" EndX="83" EndY="109" Name="Magic Skeleton 6" />
+		<Square Level="5" MonsterIndex="130" SpawnTime="8" StartX="53" StartY="74" EndX="83" EndY="109" Name="Magic Skeleton 6" />
+		<Square Level="5" MonsterIndex="130" SpawnTime="8" StartX="53" StartY="74" EndX="83" EndY="109" Name="Magic Skeleton 6" />
+		<Square Level="5" MonsterIndex="130" SpawnTime="8" StartX="53" StartY="74" EndX="83" EndY="109" Name="Magic Skeleton 6" />
+	<!-- Devil Square 7 -->
+		<Square Level="6" MonsterIndex="143" SpawnTime="8" StartX="120" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 7" />
+		<Square Level="6" MonsterIndex="143" SpawnTime="8" StartX="120" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 7" />
+		<Square Level="6" MonsterIndex="143" SpawnTime="8" StartX="120" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 7" />
+		<Square Level="6" MonsterIndex="143" SpawnTime="8" StartX="120" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 7" />
+		<Square Level="6" MonsterIndex="143" SpawnTime="8" StartX="120" StartY="80" EndX="150" EndY="115" Name="Magic Skeleton 7" />
+	</BossAppearanceSettings>
+
+	<RankingBonusSettings>
+	<!-- Devil Square 1 -->
+		<Square Level="0" RankingPlace="0" ExpBonus="250000000" ZenBonus="1000000" />
+		<Square Level="0" RankingPlace="1" ExpBonus="200000000" ZenBonus="750000" />
+		<Square Level="0" RankingPlace="2" ExpBonus="150000000" ZenBonus="500000" />
+		<Square Level="0" RankingPlace="3" ExpBonus="100000000" ZenBonus="250000" />
+	<!-- Devil Square 2 -->
+		<Square Level="1" RankingPlace="0" ExpBonus="400000000" ZenBonus="5000000" />
+		<Square Level="1" RankingPlace="1" ExpBonus="350000000" ZenBonus="2500000" />
+		<Square Level="1" RankingPlace="2" ExpBonus="300000000" ZenBonus="1500000" />
+		<Square Level="1" RankingPlace="3" ExpBonus="250000000" ZenBonus="1000000" />
+	<!-- Devil Square 3 -->
+		<Square Level="2" RankingPlace="0" ExpBonus="550000000" ZenBonus="12500000" />
+		<Square Level="2" RankingPlace="1" ExpBonus="500000000" ZenBonus="9500000" />
+		<Square Level="2" RankingPlace="2" ExpBonus="450000000" ZenBonus="7000000" />
+		<Square Level="2" RankingPlace="3" ExpBonus="400000000" ZenBonus="5000000" />
+	<!-- Devil Square 4 -->
+		<Square Level="3" RankingPlace="0" ExpBonus="700000000" ZenBonus="20000000" />
+		<Square Level="3" RankingPlace="1" ExpBonus="650000000" ZenBonus="17500000" />
+		<Square Level="3" RankingPlace="2" ExpBonus="600000000" ZenBonus="15000000" />
+		<Square Level="3" RankingPlace="3" ExpBonus="550000000" ZenBonus="12500000" />
+	<!-- Devil Square 5 -->
+		<Square Level="4" RankingPlace="0" ExpBonus="850000000" ZenBonus="35000000" />
+		<Square Level="4" RankingPlace="1" ExpBonus="800000000" ZenBonus="30000000" />
+		<Square Level="4" RankingPlace="2" ExpBonus="750000000" ZenBonus="25000000" />
+		<Square Level="4" RankingPlace="3" ExpBonus="700000000" ZenBonus="20000000" />
+	<!-- Devil Square 6 -->
+		<Square Level="5" RankingPlace="0" ExpBonus="1000000000" ZenBonus="55000000" />
+		<Square Level="5" RankingPlace="1" ExpBonus="950000000" ZenBonus="45000000" />
+		<Square Level="5" RankingPlace="2" ExpBonus="900000000" ZenBonus="40000000" />
+		<Square Level="5" RankingPlace="3" ExpBonus="850000000" ZenBonus="35000000" />
+	<!-- Devil Square 7 -->
+		<Square Level="6" RankingPlace="0" ExpBonus="1600000000" ZenBonus="90000000" />
+		<Square Level="6" RankingPlace="1" ExpBonus="1400000000" ZenBonus="75000000" />
+		<Square Level="6" RankingPlace="2" ExpBonus="1200000000" ZenBonus="65000000" />
+		<Square Level="6" RankingPlace="3" ExpBonus="1000000000" ZenBonus="55000000" />
+	</RankingBonusSettings>
+
+	<RewardExpSettings>
+		<Square Level="0" Multiplier="10" /> <!-- Devil Square 1 -->
+		<Square Level="1" Multiplier="10" /> <!-- Devil Square 2 -->
+		<Square Level="2" Multiplier="10" /> <!-- Devil Square 3 -->
+		<Square Level="3" Multiplier="10" /> <!-- Devil Square 4 -->
+		<Square Level="4" Multiplier="10" /> <!-- Devil Square 5 -->
+		<Square Level="5" Multiplier="10" /> <!-- Devil Square 6 -->
+		<Square Level="6" Multiplier="10" /> <!-- Devil Square 7 -->
+	</RewardExpSettings>
+</DevilSquare_Classic>

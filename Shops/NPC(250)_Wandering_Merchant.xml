@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2010 - 2018 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Tab Id="1">
+		<Item Cat="7" Index="5" Level="3" Durability="33" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="0" Level="3" Durability="37" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="6" Level="0" Durability="40" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="8" Level="0" Durability="44" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<!--  -->
+		<Item Cat="8" Index="5" Level="3" Durability="33" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="0" Level="3" Durability="37" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="6" Level="0" Durability="40" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="8" Level="0" Durability="44" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<!--  -->
+		<Item Cat="9" Index="5" Level="3" Durability="33" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="6" Level="0" Durability="40" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="8" Level="0" Durability="44" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="0" Level="3" Durability="37" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<!--  -->
+		<Item Cat="10" Index="5" Level="3" Durability="33" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="6" Level="0" Durability="40" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="8" Level="0" Durability="44" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="0" Level="3" Durability="37" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<!--  -->
+		<Item Cat="11" Index="5" Level="3" Durability="33" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="6" Level="0" Durability="40" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="8" Level="0" Durability="44" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="0" Level="3" Durability="37" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+	</Tab>
+	<Tab Id="2" />
+	<Tab Id="3" />
+	<Tab Id="4" />
+	<Tab Id="5" />
+</Shop>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ExpSystem ###
+//	CalcType: Defines formula ID used in ExpCalc.lua -> ExpSystemCalc function, default configuration offers below formulas:
+//		0: Static exp only
+//				~ StaticExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
+//		1: Static plus Dynamic
+//				~ StaticExp + DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
+//		2: Static multiply Dynamic plus Bonus
+//				~ StaticExp * DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
+//		3: Dynamic only
+//				~ DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
+//		4: (Static plus Bonus) multiply Dynamic
+//				~ (StaticExp + EventExp + VipExp + BonusEvent + MapBonusExp) * DynamicExp
+//		5: (Static plus Dynamic) multiply VipExp
+//				~ (StaticExp + DynamicExp + EventExp + BonusEvent + MapBonusExp) * VipExp
+//
+//	NonVipAdjuster: Value used to adjust experience multiplier for non VIP players, use wisely.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If value is set to different than 0 and player status is non VIP then value of NonVipAdjuster is used, see explanation below.
+//~~ VipExp attribute used in ExpSystem formulas of ExpCalc.lua is always set to 1.0 for non VIP players
+//~~ It may cause unexpected additional bonus for non VIP players if VipExp is used as components of the sum and not as multiplier.
+//~~ E.g. StaticExp + VipExp * 4 (StaticExp is 5, VipExp for VIP is set to 3). Calculation for non VIP player would look as follows:
+//~~ 5 + 1 * 4 = x9, for VIP player it would look like: 5 + 3 * 4 = x17. It means that non VIP player gains extra benefit of 4 (1*4)
+//~~ as VipExp is set to 1, and not 0. It would mean that Exp Multiplier for non VIP players must be adjusted and NonVipAdjuster set to 4
+//~~ what would result in the following. ExpMultiplier = (StatisExp + VipExp * 4) - NonVipAdjuster = (5 + 1 * 4) - 4 = 5
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	PartyExpGainRange: Max distance (tiles) from other party member to apply party exp
+//	DebugMode: If enables will display a log in Game Server, 0/1
+//
+// ### ExpSystem::StaticExp ###
+//	Normal: The normal experience multiplier, float 
+//	Master: The master experience multiplier, third character class of minimum level of "MaxNormalLevel", float
+//	Majestic: The majestic experience multiplier, fourth character class of minimum level of "MaxMasterLevelFor3rdClass", float
+//	Event: The event experience bonus, float
+//	Quest: The quest experience multiplier (quests received from Quests System), float
+//	OffLevel: Multiplier of StaticExp for players in Offline Levelling mode, if not owning the plugin it is always 1.0
+//
+// ### ExpSystem::PartyRegAddExp ###
+//	One: Party AddExp value for regular party of one member
+//	Two: Party AddExp value for regular party of two members
+//	Three: Party AddExp value for regular party of three members
+//	Four: Party AddExp value for regular party of four members
+//	Five: Party AddExp value for regular party of five members
+//
+// ### ExpSystem::PartySetAddExp ###
+//	Two: Party AddExp value for special party of two members
+//	Three: Party AddExp value for special party of three members
+//	Four: Party AddExp value for special party of four members
+//	Five: Party AddExp value for special party of five members
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ PartyRegAddExp and PartySetAddExp are used in Exp section of ExpManager.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### ExpSystem::DynamicExpRangeList ###
+//	MinGrandReset: Start range of grand resets count to apply the rule, optional or -1 if not applies
+//	MaxGrandReset: End range of grand resets count to apply the rule, optional or -1 if not applies
+//	MinReset: Start range of resets count to apply the rule
+//	MaxReset: End range of resets count to apply the rule
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If MAX used as value then max grand/reset attribute is set to MaxReset value from Common.ini
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	MinLevel: Start range of level to apply the rule
+//	MaxLevel: End range of level to apply the rule
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If MAX used as value then max level attribute is set to sum of MaxNormalLevel and MaxMasterLevel from Common.ini
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	NormalExp: Regular experience multiplier
+//	MasterExp: Master experience multiplier
+//	MajesticExp: Majestic experience multiplier
+//	OffLevelExp: Multiplier of DynamicExp for players in Offline Levelling mode, if not owning the plugin it is always 1.0
+//
+// ### PremiumExpRangeList::Range ### ~ exp percentage value added upon use of premium items
+//	MinExpPercent: Minimum range value of exp gain percentage 
+//	MaxExpPercent: Maximum range value of exp gain percentage 
+//	PremiumExpBonus: Percentage value of bonus to added
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If MAX used as value then MinExpPercent is set to "infinite" (‭2147483647‬)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Formula: GainExp = BaseExp * PremiumItemIncreaseValue / 100 * (100 + PremiumExpBonus) / 100
+// e.g. with Panda Pet, GainExp = 3380 * 150 / 100 * (100 + 10) / 100 = 55717
+// GainExp value is exp after all other bonuses explained in CalcType part above
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+//
+-->
+
+<ExpSystem CalcType="3" NonVipAdjuster="0.0" PartyExpGainRange="9" DebugMode="0">
+	<StaticExp Normal="25" Master="15" Majestic="5.0" Event="0.0" Quest="1.0" OffLevel="20.0" />
+	<PartyRegAddExp One="1.0" Two="1.9" Three="2.8" Four="3.7" Five="4.6" />
+	<PartySetAddExp Two="1.9" Three="2.8" Four="3.7" Five="4.6" />
+	
+	<DynamicExpRangeList>
+		<!-- Reset 0 By Kevin fernandez :D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<Range MinReset="0" MaxReset="0" MinLevel="1" MaxLevel="50" NormalExp="27" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="51" MaxLevel="100" NormalExp="26" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="101" MaxLevel="150" NormalExp="25" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="151" MaxLevel="200" NormalExp="24" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="201" MaxLevel="250" NormalExp="23" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="251" MaxLevel="300" NormalExp="22" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="301" MaxLevel="350" NormalExp="21" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="351" MaxLevel="400" NormalExp="20" MasterExp="10" MajesticExp="1" OffLevelExp="1"/>
+			<!-- master -->
+			<Range MinReset="0" MaxReset="0" MinLevel="401" MaxLevel="450" NormalExp="1" MasterExp="10" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="451" MaxLevel="500" NormalExp="1" MasterExp="9" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="501" MaxLevel="550" NormalExp="1" MasterExp="8" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="551" MaxLevel="600" NormalExp="1" MasterExp="7" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="601" MaxLevel="700" NormalExp="1" MasterExp="6" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="701" MaxLevel="800" NormalExp="1" MasterExp="5" MajesticExp="3.5" OffLevelExp="1"/>
+			<!-- majestic -->
+			<Range MinReset="0" MaxReset="0" MinLevel="801" MaxLevel="900" NormalExp="1" MasterExp="1" MajesticExp="3.5" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="901" MaxLevel="1000" NormalExp="1" MasterExp="1" MajesticExp="3" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="1001" MaxLevel="1050" NormalExp="1" MasterExp="1" MajesticExp="2.6" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="1051" MaxLevel="1100" NormalExp="1" MasterExp="1" MajesticExp="2.2" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="1101" MaxLevel="1150" NormalExp="1" MasterExp="1" MajesticExp="1.8" OffLevelExp="1"/>
+			<Range MinReset="0" MaxReset="0" MinLevel="1151" MaxLevel="1400" NormalExp="1" MasterExp="1" MajesticExp="1.5" OffLevelExp="1"/>
+		<!-- Reset 1 By Kevin fernandez :D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<Range MinReset="1" MaxReset="1" MinLevel="1" MaxLevel="50" NormalExp="20.25" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="51" MaxLevel="100" NormalExp="19.5" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="101" MaxLevel="150" NormalExp="18.75" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="151" MaxLevel="200" NormalExp="18" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="201" MaxLevel="250" NormalExp="17.25" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="251" MaxLevel="300" NormalExp="16.5" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="301" MaxLevel="350" NormalExp="15.75" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="351" MaxLevel="400" NormalExp="15" MasterExp="10.5" MajesticExp="1" OffLevelExp="1"/>
+			<!-- master -->
+			<Range MinReset="1" MaxReset="1" MinLevel="401" MaxLevel="450" NormalExp="1" MasterExp="10.5" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="451" MaxLevel="500" NormalExp="1" MasterExp="9.45" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="501" MaxLevel="550" NormalExp="1" MasterExp="8.4" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="551" MaxLevel="600" NormalExp="1" MasterExp="7.35" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="601" MaxLevel="700" NormalExp="1" MasterExp="6.3" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="701" MaxLevel="800" NormalExp="1" MasterExp="5.25" MajesticExp="3.68" OffLevelExp="1"/>
+			<!-- majestic -->
+			<Range MinReset="1" MaxReset="1" MinLevel="801" MaxLevel="900" NormalExp="1" MasterExp="1" MajesticExp="3.68" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="901" MaxLevel="1000" NormalExp="1" MasterExp="1" MajesticExp="3.15" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="1001" MaxLevel="1050" NormalExp="1" MasterExp="1" MajesticExp="2.73" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="1051" MaxLevel="1100" NormalExp="1" MasterExp="1" MajesticExp="2.31" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="1101" MaxLevel="1150" NormalExp="1" MasterExp="1" MajesticExp="1.89" OffLevelExp="1"/>
+			<Range MinReset="1" MaxReset="1" MinLevel="1151" MaxLevel="1400" NormalExp="1" MasterExp="1" MajesticExp="1.58" OffLevelExp="1"/>
+		<!-- Reset 2 By Kevin fernandez :D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<Range MinReset="2" MaxReset="2" MinLevel="1" MaxLevel="50" NormalExp="15.19" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="51" MaxLevel="100" NormalExp="14.63" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="101" MaxLevel="150" NormalExp="14.06" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="151" MaxLevel="200" NormalExp="13.5" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="201" MaxLevel="250" NormalExp="12.94" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="251" MaxLevel="300" NormalExp="12.38" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="301" MaxLevel="350" NormalExp="11.81" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="351" MaxLevel="400" NormalExp="11.25" MasterExp="11.03" MajesticExp="1" OffLevelExp="1"/>
+			<!-- master -->
+			<Range MinReset="2" MaxReset="2" MinLevel="401" MaxLevel="450" NormalExp="1" MasterExp="11.03" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="451" MaxLevel="500" NormalExp="1" MasterExp="9.92" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="501" MaxLevel="550" NormalExp="1" MasterExp="8.82" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="551" MaxLevel="600" NormalExp="1" MasterExp="7.72" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="601" MaxLevel="700" NormalExp="1" MasterExp="6.62" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="701" MaxLevel="800" NormalExp="1" MasterExp="5.51" MajesticExp="3.86" OffLevelExp="1"/>
+			<!-- majestic -->
+			<Range MinReset="2" MaxReset="2" MinLevel="801" MaxLevel="900" NormalExp="1" MasterExp="1" MajesticExp="3.86" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="901" MaxLevel="1000" NormalExp="1" MasterExp="1" MajesticExp="3.31" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="1001" MaxLevel="1050" NormalExp="1" MasterExp="1" MajesticExp="2.87" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="1051" MaxLevel="1100" NormalExp="1" MasterExp="1" MajesticExp="2.43" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="1101" MaxLevel="1150" NormalExp="1" MasterExp="1" MajesticExp="1.98" OffLevelExp="1"/>
+			<Range MinReset="2" MaxReset="2" MinLevel="1151" MaxLevel="1400" NormalExp="1" MasterExp="1" MajesticExp="1.66" OffLevelExp="1"/>
+		<!-- Reset 3 By Kevin fernandez :D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<Range MinReset="3" MaxReset="3" MinLevel="1" MaxLevel="50" NormalExp="11.39" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="51" MaxLevel="100" NormalExp="10.97" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="101" MaxLevel="150" NormalExp="10.55" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="151" MaxLevel="200" NormalExp="10.13" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="201" MaxLevel="250" NormalExp="9.71" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="251" MaxLevel="300" NormalExp="9.29" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="301" MaxLevel="350" NormalExp="8.86" MasterExp="1" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="351" MaxLevel="400" NormalExp="8.44" MasterExp="11.58" MajesticExp="1" OffLevelExp="1"/>
+			<!-- master -->
+			<Range MinReset="3" MaxReset="3" MinLevel="401" MaxLevel="450" NormalExp="1" MasterExp="11.58" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="451" MaxLevel="500" NormalExp="1" MasterExp="10.42" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="501" MaxLevel="550" NormalExp="1" MasterExp="9.26" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="551" MaxLevel="600" NormalExp="1" MasterExp="8.11" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="601" MaxLevel="700" NormalExp="1" MasterExp="6.95" MajesticExp="1" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="701" MaxLevel="800" NormalExp="1" MasterExp="5.79" MajesticExp="4.05" OffLevelExp="1"/>
+			<!-- majestic -->
+			<Range MinReset="3" MaxReset="3" MinLevel="801" MaxLevel="900" NormalExp="1" MasterExp="1" MajesticExp="4.05" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="901" MaxLevel="1000" NormalExp="1" MasterExp="1" MajesticExp="3.48" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="1001" MaxLevel="1050" NormalExp="1" MasterExp="1" MajesticExp="3.01" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="1051" MaxLevel="1100" NormalExp="1" MasterExp="1" MajesticExp="2.55" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="1101" MaxLevel="1150" NormalExp="1" MasterExp="1" MajesticExp="2.08" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="3" MinLevel="1151" MaxLevel="1400" NormalExp="1" MasterExp="1" MajesticExp="1.74" OffLevelExp="1"/>
+	</DynamicExpRangeList>
+	
+	<PremiumExpRangeList>
+		<!-- <Range MinExpPercent="0" MaxExpPercent="50" PremiumExpBonus="10" />
+		<Range MinExpPercent="51" MaxExpPercent="100" PremiumExpBonus="20" />
+		<Range MinExpPercent="101" MaxExpPercent="150" PremiumExpBonus="30" />
+		<Range MinExpPercent="151" MaxExpPercent="200" PremiumExpBonus="40" />
+		<Range MinExpPercent="201" MaxExpPercent="250" PremiumExpBonus="50" />
+		<Range MinExpPercent="251" MaxExpPercent="300" PremiumExpBonus="60" />
+		<Range MinExpPercent="301" MaxExpPercent="350" PremiumExpBonus="70" />
+		<Range MinExpPercent="351" MaxExpPercent="400" PremiumExpBonus="80" />
+		<Range MinExpPercent="401" MaxExpPercent="450" PremiumExpBonus="90" />
+		<Range MinExpPercent="451" MaxExpPercent="500" PremiumExpBonus="100" />
+		<Range MinExpPercent="501" MaxExpPercent="550" PremiumExpBonus="110" />
+		<Range MinExpPercent="551" MaxExpPercent="600" PremiumExpBonus="120" />
+		<Range MinExpPercent="601" MaxExpPercent="650" PremiumExpBonus="130" />
+		<Range MinExpPercent="651" MaxExpPercent="700" PremiumExpBonus="140" />
+		<Range MinExpPercent="701" MaxExpPercent="MAX" PremiumExpBonus="150" /> -->
+	</PremiumExpRangeList>
+</ExpSystem>

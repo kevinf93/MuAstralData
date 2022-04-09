@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2010 - 2018 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<CashItemPackage>
+	<Package GUID="0" ID="0" ItemSequence="0" UniqueID1="912" UniqueID2="1151" Description="Lemuria Character Card" />
+	<Package GUID="1" ID="0" ItemSequence="1" UniqueID1="911" UniqueID2="1149" Description="Light Wizard Character Card" />
+	<Package GUID="2" ID="0" ItemSequence="2" UniqueID1="910" UniqueID2="1147" Description="Gun Crusher Character Card" />
+	<Package GUID="3" ID="0" ItemSequence="3" UniqueID1="909" UniqueID2="1145" Description="Slayer Character Card" />
+	<Package GUID="4" ID="0" ItemSequence="4" UniqueID1="908" UniqueID2="1143" Description="Grow Lancer Character Card" />
+	<Package GUID="5" ID="0" ItemSequence="5" UniqueID1="907" UniqueID2="1141" Description="RageFighter Character Card" />
+	<Package GUID="6" ID="0" ItemSequence="6" UniqueID1="906" UniqueID2="1139" Description="Summoner Character Card" />
+	<Package GUID="0" ID="1" ItemSequence="0" UniqueID1="31" UniqueID2="53" Description="Summoner Character Card" />
+	<Package GUID="1" ID="1" ItemSequence="1" UniqueID1="907" UniqueID2="1141" Description="RageFighter Character Card" />
+	<Package GUID="2" ID="1" ItemSequence="2" UniqueID1="908" UniqueID2="1143" Description="Grow Lancer Character Card" />
+	<Package GUID="3" ID="1" ItemSequence="3" UniqueID1="909" UniqueID2="1145" Description="Slayer Character Card" />
+	<Package GUID="4" ID="1" ItemSequence="4" UniqueID1="910" UniqueID2="1147" Description="Gun Crusher Character Card" />
+	<Package GUID="5" ID="1" ItemSequence="5" UniqueID1="911" UniqueID2="1149" Description="Light Wizard Character Card" />
+	<Package GUID="6" ID="1" ItemSequence="6" UniqueID1="914" UniqueID2="1153" Description="Rune Wizard Character Card" />
+</CashItemPackage>

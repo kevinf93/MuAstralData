@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2010 - 2018 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+<ItemBag>
+	<BagConfig Name="Item_Kundun_Box+2" ItemRate="10000" SetItemRate="0" MoneyDrop="0" BagUseRate="10000" BagUseEffect="58" IsPentagramForBeginnersDrop="0" MasterySetItemInclude="0" />
+	<AddCoin Enable="0" CoinType="0" CoinValue="0" />
+	<Ruud GainRate="0" MinValue="1" MaxValue="10" />
+	<SummonBook Enable="0" DropRate="0" ItemCat="14" ItemIndex="217" />
+	<DropAllow Wizard="1" DW="1" Knight="1" DK="1" FairyElf="1" ELF="1" MagicGladiator="1" MG="1" DarkLord="1" DL="1" Summoner="1" SU="1" RageFighter="1" RF="1" GrowLancer="1" GL="1" RuneWizard="1" RW="1" Slayer="1" SLA="1" GunCrusher="1" GC="1" LightWizard="1" LW="1" LemuriaMage="1" LM="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1" DisplayName="DropAllow">
+		<Drop Rate="10000" Count="1">
+			<!--Elven Axe-->
+			<Item Cat="1" Index="4" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Great Hammer-->
+			<Item Cat="2" Index="3" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Light Spear-->
+			<Item Cat="3" Index="0" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Blade-->
+			<Item Cat="0" Index="5" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Light Saber-->
+			<Item Cat="0" Index="10" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Gorgon Staff-->
+			<Item Cat="5" Index="4" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Violent Wind Stick-->
+			<Item Cat="5" Index="15" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Battle Scepter-->
+			<Item Cat="2" Index="8" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Conmocion Lance-->
+			<Item Cat="3" Index="14" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Arquebus-->
+			<Item Cat="4" Index="10" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Battle Bow-->
+			<Item Cat="4" Index="3" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Rune Spink Mask-->
+			<Item Cat="7" Index="117" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Rune Spink Armor-->
+			<Item Cat="8" Index="117" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Rune Spink Pants-->
+			<Item Cat="9" Index="117" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Rune Spink Gloves-->
+			<Item Cat="10" Index="117" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Rune Spink Boots-->
+			<Item Cat="11" Index="117" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Sphinx Mask-->
+			<Item Cat="7" Index="7" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Sphinx Armor-->
+			<Item Cat="8" Index="7" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Sphinx Pants-->
+			<Item Cat="9" Index="7" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Sphinx Gloves-->
+			<Item Cat="10" Index="7" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Sphinx Boots-->
+			<Item Cat="11" Index="7" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Spirit Helm-->
+			<Item Cat="7" Index="13" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Spirit Armor-->
+			<Item Cat="8" Index="13" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Spirit Pants-->
+			<Item Cat="9" Index="13" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Spirit Gloves-->
+			<Item Cat="10" Index="13" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Spirit Boots-->
+			<Item Cat="11" Index="13" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Gunner Helmet-->
+			<Item Cat="7" Index="207" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Gunner Armor-->
+			<Item Cat="8" Index="207" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Gunner Pants-->
+			<Item Cat="9" Index="207" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Gunner Glove-->
+			<Item Cat="10" Index="207" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Gunner Boots-->
+			<Item Cat="11" Index="207" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Helm-->
+			<Item Cat="7" Index="6" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Armor-->
+			<Item Cat="8" Index="6" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Pants-->
+			<Item Cat="9" Index="6" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Gloves-->
+			<Item Cat="10" Index="6" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Scale Boots-->
+			<Item Cat="11" Index="6" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Robust Helmet-->
+			<Item Cat="7" Index="91" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Robust Armor-->
+			<Item Cat="8" Index="91" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Robust Pants-->
+			<Item Cat="9" Index="91" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Robust Gloves-->
+			<Item Cat="10" Index="91" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Robust Boots-->
+			<Item Cat="11" Index="91" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Ancient Helm-->
+			<Item Cat="7" Index="41" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Ancient Armor-->
+			<Item Cat="8" Index="41" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Ancient Pants-->
+			<Item Cat="9" Index="41" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Ancient Gloves-->
+			<Item Cat="10" Index="41" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Ancient Boots-->
+			<Item Cat="11" Index="41" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Mage Sphinx Helm-->
+			<Item Cat="7" Index="253" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Mage Sphinx Armor-->
+			<Item Cat="8" Index="253" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Mage Sphinx Pants-->
+			<Item Cat="9" Index="253" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Mage Sphinx Gloves-->
+			<Item Cat="10" Index="253" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Mage Sphinx Boots-->
+			<Item Cat="11" Index="253" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Glimmer Helm-->
+			<Item Cat="7" Index="235" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Glimmer Armor-->
+			<Item Cat="8" Index="235" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Glimmer Pants-->
+			<Item Cat="9" Index="235" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Glimmer Gloves-->
+			<Item Cat="10" Index="235" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+			<!--Glimmer Boots-->
+			<Item Cat="11" Index="235" ItemMinLevel="0" ItemMaxLevel="3" Skill="-1" Luck="-1" Option="-1" Exc="-2" SetItem="0" SocketCount="0" SocketInfo="-1" ElementalItem="0" />
+		</Drop>
+	</DropAllow>
+</ItemBag>

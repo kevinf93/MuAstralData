@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2010 - 2018 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<CashItemList>
+	<Item GUID="618" iIndex="541" iSubIndex="508" OptionSelect="1134" PackageID="0" CoinType="0" CoinValue="75" UniqueID1="905" UniqueID2="1134" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Wealth" />
+	<Item GUID="619" iIndex="541" iSubIndex="508" OptionSelect="1135" PackageID="0" CoinType="0" CoinValue="125" UniqueID1="905" UniqueID2="1135" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Wealth" />
+	<Item GUID="620" iIndex="541" iSubIndex="508" OptionSelect="1136" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="905" UniqueID2="1136" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Wealth" />
+	<Item GUID="621" iIndex="541" iSubIndex="508" OptionSelect="1137" PackageID="0" CoinType="0" CoinValue="800" UniqueID1="905" UniqueID2="1137" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Wealth" />
+	<Item GUID="623" iIndex="542" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="906" UniqueID2="1139" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Summoner Character Card" />
+	<Item GUID="624" iIndex="543" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="907" UniqueID2="1141" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="RageFighter Character Card" />
+	<Item GUID="625" iIndex="544" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="908" UniqueID2="1143" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Grow Lancer Character Card" />
+	<Item GUID="626" iIndex="545" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="909" UniqueID2="1145" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Slayer Character Card" />
+	<Item GUID="627" iIndex="546" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="910" UniqueID2="1147" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Gun Crusher Character Card" />
+	<Item GUID="628" iIndex="547" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="911" UniqueID2="1149" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Light Wizard Character Card" />
+	<Item GUID="629" iIndex="548" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="912" UniqueID2="1151" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Lemuria Character Card" />
+	<Item GUID="636" iIndex="555" iSubIndex="508" OptionSelect="0" PackageID="1" CoinType="0" CoinValue="175" UniqueID1="0" UniqueID2="0" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="1" Description="Random Character Card" />
+	<Item GUID="637" iIndex="556" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="914" UniqueID2="1153" ShopCategory="58" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Rune Wizard Character Card" />
+	<Item GUID="638" iIndex="557" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="65" UniqueID1="915" UniqueID2="1155" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Strength (250)" />
+	<Item GUID="639" iIndex="558" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="230" UniqueID1="916" UniqueID2="1157" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Strength (1000)" />
+	<Item GUID="640" iIndex="559" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="420" UniqueID1="917" UniqueID2="1159" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Strength (2500)" />
+	<Item GUID="641" iIndex="560" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="65" UniqueID1="918" UniqueID2="1161" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Agility (250)" />
+	<Item GUID="642" iIndex="561" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="230" UniqueID1="920" UniqueID2="1164" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Agility (1000)" />
+	<Item GUID="643" iIndex="562" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="420" UniqueID1="921" UniqueID2="1166" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Agility (2500)" />
+	<Item GUID="644" iIndex="563" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="65" UniqueID1="922" UniqueID2="1168" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Stamina (250)" />
+	<Item GUID="645" iIndex="564" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="230" UniqueID1="923" UniqueID2="1170" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Stamina (1000)" />
+	<Item GUID="646" iIndex="565" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="420" UniqueID1="924" UniqueID2="1172" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Stamina (2500)" />
+	<Item GUID="647" iIndex="566" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="65" UniqueID1="925" UniqueID2="1174" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Energy (250)" />
+	<Item GUID="648" iIndex="567" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="230" UniqueID1="926" UniqueID2="1176" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Energy (1000)" />
+	<Item GUID="649" iIndex="568" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="420" UniqueID1="927" UniqueID2="1178" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Energy (2500)" />
+	<Item GUID="650" iIndex="569" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="65" UniqueID1="928" UniqueID2="1180" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Command (250)" />
+	<Item GUID="653" iIndex="572" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="230" UniqueID1="931" UniqueID2="1186" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Command (1000)" />
+	<Item GUID="654" iIndex="573" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="420" UniqueID1="932" UniqueID2="1188" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Reset F. Command (2500)" />
+	<Item GUID="659" iIndex="578" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="200" UniqueID1="937" UniqueID2="1198" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Vip Bronze (14 Dias)" />
+	<Item GUID="660" iIndex="579" iSubIndex="508" OptionSelect="0" PackageID="0" CoinType="0" CoinValue="350" UniqueID1="938" UniqueID2="1200" ShopCategory="27" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Vip Bronze (1 Mes)" />
+	<Item GUID="666" iIndex="581" iSubIndex="508" OptionSelect="1206" PackageID="0" CoinType="0" CoinValue="125" UniqueID1="940" UniqueID2="1206" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Wealth" />
+	<Item GUID="667" iIndex="581" iSubIndex="508" OptionSelect="1207" PackageID="0" CoinType="0" CoinValue="225" UniqueID1="940" UniqueID2="1207" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Wealth" />
+	<Item GUID="668" iIndex="581" iSubIndex="508" OptionSelect="1208" PackageID="0" CoinType="0" CoinValue="650" UniqueID1="940" UniqueID2="1208" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Wealth" />
+	<Item GUID="669" iIndex="581" iSubIndex="508" OptionSelect="1209" PackageID="0" CoinType="0" CoinValue="1500" UniqueID1="940" UniqueID2="1209" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Wealth" />
+	<Item GUID="676" iIndex="583" iSubIndex="508" OptionSelect="1216" PackageID="0" CoinType="0" CoinValue="50" UniqueID1="942" UniqueID2="1216" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Ascension" />
+	<Item GUID="677" iIndex="583" iSubIndex="508" OptionSelect="1217" PackageID="0" CoinType="0" CoinValue="90" UniqueID1="942" UniqueID2="1217" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Ascension" />
+	<Item GUID="678" iIndex="583" iSubIndex="508" OptionSelect="1218" PackageID="0" CoinType="0" CoinValue="250" UniqueID1="942" UniqueID2="1218" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Ascension" />
+	<Item GUID="679" iIndex="583" iSubIndex="508" OptionSelect="1219" PackageID="0" CoinType="0" CoinValue="500" UniqueID1="942" UniqueID2="1219" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Seal of Ascension" />
+	<Item GUID="681" iIndex="584" iSubIndex="508" OptionSelect="1221" PackageID="0" CoinType="0" CoinValue="90" UniqueID1="943" UniqueID2="1221" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Ascension" />
+	<Item GUID="682" iIndex="584" iSubIndex="508" OptionSelect="1222" PackageID="0" CoinType="0" CoinValue="175" UniqueID1="943" UniqueID2="1222" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Ascension" />
+	<Item GUID="683" iIndex="584" iSubIndex="508" OptionSelect="1223" PackageID="0" CoinType="0" CoinValue="500" UniqueID1="943" UniqueID2="1223" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Ascension" />
+	<Item GUID="684" iIndex="584" iSubIndex="508" OptionSelect="1224" PackageID="0" CoinType="0" CoinValue="1150" UniqueID1="943" UniqueID2="1224" ShopCategory="29" GPRewardValue="0" CanBuy="1" CanGift="1" RandomItemSelect="0" Description="Master Seal of Ascension" />
+</CashItemList>
