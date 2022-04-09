@@ -154,6 +154,7 @@
   <DropItem MonsterMinLevel="66" MonsterMaxLevel="78" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="19" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2999" Name="Orb of Death Stab" />
 	<DropItem MonsterMinLevel="85" MonsterMaxLevel="600" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="164" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2999" Name="Spiral Charge Orb" />
 	<DropItem MonsterMinLevel="85" MonsterMaxLevel="600" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="165" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2999" Name="Crusher Charge Orb" />
+  <DropItem MonsterMinLevel="85" MonsterMaxLevel="600" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="485" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2999" Name="Swordsman's Wrath" />
   <!-- <DropItem MonsterMinLevel="135" MonsterMaxLevel="165" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="165" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2999" Name="Crusher Charge Orb" /> -->
 	<!-- Poderes: Otros -->
   <DropItem MonsterMinLevel="70" MonsterMaxLevel="85" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="21" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2999" Name="Scroll of FireBurst" />
