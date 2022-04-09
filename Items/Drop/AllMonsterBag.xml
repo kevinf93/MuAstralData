@@ -198,7 +198,7 @@
   <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="15" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="625" Name="Jewel of Chaos" />
   <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="14" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="400" Name="Jewel of Soul" />
   <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="13" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="250" Name="Jewel of Bless" />
-  <!-- Drop Jewel of Reset (Krash Games) 0.025 Posibilidad :D -->
+  <!-- Drop Jewel of Reset (Krash Games) 0.025 Posibilidad -->
   <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="20" Index="500" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="25" Name="Jewel of Reset (Krash Games)" />
   <!--  -->
 </AllMonsterItemDrop>
