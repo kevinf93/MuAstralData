@@ -148,10 +148,10 @@ function RageFighterDamageCalc(Strength, Dexterity, Vitality, Energy)
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	AttackDamageMinLeft = Dexterity / 10 + Vitality / 25 -- Minimum Left Hand Damage
-	AttackDamageMinRight = Dexterity / 10 + Vitality / 25 -- Minimum Right Hand Damage
-	AttackDamageMaxLeft = Dexterity / 7 + Vitality / 20 -- Maximum Left Hand Damage
-	AttackDamageMaxRight = Dexterity / 7 + Vitality / 20 -- Maximum Right Hand Damage
+	AttackDamageMinLeft = Dexterity / 10 + Vitality / 27 -- Minimum Left Hand Damage
+	AttackDamageMinRight = Dexterity / 10 + Vitality / 27 -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = Dexterity / 7 + Vitality / 23 -- Maximum Left Hand Damage
+	AttackDamageMaxRight = Dexterity / 7 + Vitality / 23 -- Maximum Right Hand Damage
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
@@ -572,31 +572,31 @@ function CalcAttackSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy,
 	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
-		AttackRate = Dexterity * 4 + 3 * TotalLevel
+		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	elseif(Class == CLASS_KNIGHT) then
-		AttackRate = Dexterity * 4.5 + 3 * TotalLevel
+		AttackRate = Dexterity * 3.5 + 3 * TotalLevel
 	elseif(Class == CLASS_ELF) then
 		AttackRate = Dexterity * 0.6 + 3 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		AttackRate = Dexterity * 3.5 + 3 * TotalLevel
+		AttackRate = Dexterity * 2.5 + 3 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
-		AttackRate = Dexterity * 4 + 3 * TotalLevel
+		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
-		AttackRate = Dexterity * 3.5 + 3 * TotalLevel
+		AttackRate = Dexterity * 2.5 + 3 * TotalLevel
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		AttackRate = Dexterity * 3.6 + 2.6 * TotalLevel
+		AttackRate = Dexterity * 2.6 + 2.6 * TotalLevel
 	elseif(Class == CLASS_GROWLANCER) then
 		AttackRate = Dexterity * 2.5 + 3 * TotalLevel
 	elseif(Class == CLASS_RUNEWIZARD) then
-		AttackRate = Dexterity * 4 + 3 * TotalLevel
+		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	elseif(Class == CLASS_SLAYER) then
 		AttackRate = Dexterity * 2.0 + 3 * TotalLevel
 	elseif(Class == CLASS_GUNCRUSHER) then
 		AttackRate = Dexterity * 2.0 + 3 * TotalLevel
 	elseif(Class == CLASS_LIGHTWIZARD) then
-		AttackRate = Dexterity * 4 + 3 * TotalLevel
+		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	elseif(Class == CLASS_LEMURIAMAGE) then
-		AttackRate = Dexterity * 4 + 3 * TotalLevel
+		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	end
 	
 	return AttackRate
