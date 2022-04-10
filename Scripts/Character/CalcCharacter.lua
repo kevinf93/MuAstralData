@@ -103,10 +103,10 @@ function GladiatorDamageCalc(Strength, Dexterity, Vitality, Energy)
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	AttackDamageMinLeft = Strength / 8 + Energy / 11 -- Minimum Left Hand Damage
-	AttackDamageMinRight = Strength / 8 + Energy / 11 -- Minimum Right Hand Damage
-	AttackDamageMaxLeft = Strength / 5 + Energy / 7 -- Maximum Left Hand Damage
-	AttackDamageMaxRight = Strength / 5 + Energy / 7 -- Maximum Right Hand Damage
+	AttackDamageMinLeft = Strength / 9 + Energy / 11 -- Minimum Left Hand Damage
+	AttackDamageMinRight = Strength / 9 + Energy / 11 -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = Strength / 6 + Energy / 7 -- Maximum Left Hand Damage
+	AttackDamageMaxRight = Strength / 6 + Energy / 7 -- Maximum Right Hand Damage
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
@@ -148,10 +148,10 @@ function RageFighterDamageCalc(Strength, Dexterity, Vitality, Energy)
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	AttackDamageMinLeft = Strength / 10 + Vitality / 25 -- Minimum Left Hand Damage
-	AttackDamageMinRight = Strength / 10 + Vitality / 25 -- Minimum Right Hand Damage
-	AttackDamageMaxLeft = Strength / 7 + Vitality / 17 -- Maximum Left Hand Damage
-	AttackDamageMaxRight = Strength / 7 + Vitality / 17 -- Maximum Right Hand Damage
+	AttackDamageMinLeft = Dexterity / 10 + Vitality / 25 -- Minimum Left Hand Damage
+	AttackDamageMinRight = Dexterity / 10 + Vitality / 25 -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = Dexterity / 7 + Vitality / 20 -- Maximum Left Hand Damage
+	AttackDamageMaxRight = Dexterity / 7 + Vitality / 20 -- Maximum Right Hand Damage
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
@@ -191,10 +191,10 @@ function SlayerDamageCalc(Strength, Dexterity, Vitality, Energy)
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	AttackDamageMinLeft = START_DAMAGE + (Dexterity / 24) + (Strength / 17) -- Minimum Left Hand Damage
-	AttackDamageMinRight = START_DAMAGE + (Dexterity / 24) + (Strength / 17) -- Minimum Right Hand Damage
-	AttackDamageMaxLeft = START_DAMAGE + (Dexterity / 14) + (Strength / 9) -- Maximum Left Hand Damage
-	AttackDamageMaxRight = START_DAMAGE + (Dexterity / 14) + (Strength / 9) -- Maximum Right Hand Damage
+	AttackDamageMinLeft = START_DAMAGE + (Dexterity / 21) + (Strength / 11) -- Minimum Left Hand Damage
+	AttackDamageMinRight = START_DAMAGE + (Dexterity / 21) + (Strength / 11) -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = START_DAMAGE + (Dexterity / 14) + (Strength / 7) -- Maximum Left Hand Damage
+	AttackDamageMaxRight = START_DAMAGE + (Dexterity / 14) + (Strength / 7) -- Maximum Right Hand Damage
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
@@ -279,8 +279,8 @@ function GladiatorMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	
-	MagicDamageMin = Energy / 7 -- Minimum Magic Damage
-	MagicDamageMax = Energy / 3 -- Maximum Magic Damage
+	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
+	MagicDamageMax = Energy / 5 -- Maximum Magic Damage
 	
 	return MagicDamageMin, MagicDamageMax
 end
@@ -357,8 +357,8 @@ function SlayerMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	
-	MagicDamageMin = START_DAMAGE_WZ + Energy / 17 -- Minimum Magic Damage
-	MagicDamageMax = START_DAMAGE_WZ + Energy / 9 -- Maximum Magic Damage
+	MagicDamageMin = START_DAMAGE_WZ + Energy / 12 -- Minimum Magic Damage
+	MagicDamageMax = START_DAMAGE_WZ + Energy / 6 -- Maximum Magic Damage
 	
 	return MagicDamageMin, MagicDamageMax
 end
@@ -469,7 +469,7 @@ function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy,
 	elseif(Class == CLASS_SUMMONER) then
 		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		AttackSuccessRate = TotalLevel * 3 + Dexterity * 1.25 + Strength / 6 + Vitality / 4
+		AttackSuccessRate = TotalLevel * 3 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_GROWLANCER) then
 		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.25 + Strength / 4
 	elseif(Class == CLASS_RUNEWIZARD) then
@@ -662,8 +662,8 @@ function ElementalDamageCalc(Class, Strength, Dexterity, Vitality, Energy, ItemM
 		MinDamage = ItemMinDamage + (Energy / 8)
 		MaxDamage = ItemMaxDamage + (Energy / 5)
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		MinDamage = ItemMinDamage + (Dexterity / 12) + (Vitality / 17)
-		MaxDamage = ItemMaxDamage + (Dexterity / 6) + (Vitality / 13)
+		MinDamage = ItemMinDamage + (Dexterity / 12) + (Strength / 17)
+		MaxDamage = ItemMaxDamage + (Dexterity / 6) + (Strength / 13)
 	elseif(Class == CLASS_GROWLANCER) then
 		MinDamage = ItemMinDamage + (Dexterity / 7) + (Strength / 12)
 		MaxDamage = ItemMaxDamage + (Dexterity / 5) + (Strength / 9)

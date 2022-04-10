@@ -74,10 +74,10 @@
 <PlayerKillSystem MinLevelForPK="6" DisablePKLevelIncrease="0" DisablePenalty="0" PKCanUseShops="1" PKCanUseMapMove="1" DropExpensiveItems="1" MaxItemLevelDrop="6" PointDeductionDivisor="2" MurdererPointIncrease="3600" LimitPKCount="9999" LiftPKPartyRestriction="0">
 <PKClearCommand Enable="1" Cost="1000000" CostMultiplyByKillCount="1" />
 	<General>
-		<PK Level="3" ReqPoint="0" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="0" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="1" CanSummonByDarkLord="0" CanTeleportByMarry="1" Description="Normal" />
-		<PK Level="4" ReqPoint="21600" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="1" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="1" CanSummonByDarkLord="0" CanTeleportByMarry="1" Description="Warning" />
-		<PK Level="5" ReqPoint="43200" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="2" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="50" CanSummonByDarkLord="0" CanTeleportByMarry="1" Description="PK Level 2" />
-		<PK Level="6" ReqPoint="86400" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="5" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="50" CanSummonByDarkLord="0" CanTeleportByMarry="1" Description="Murderer Level" />
+		<PK Level="3" ReqPoint="0" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="0" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="1" CanSummonByDarkLord="1" CanTeleportByMarry="1" Description="Normal" />
+		<PK Level="4" ReqPoint="21600" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="1" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="1" CanSummonByDarkLord="1" CanTeleportByMarry="1" Description="Warning" />
+		<PK Level="5" ReqPoint="43200" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="2" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="50" CanSummonByDarkLord="1" CanTeleportByMarry="1" Description="PK Level 2" />
+		<PK Level="6" ReqPoint="86400" ItemLoseRateOnMonsterKill="2" ItemLoseRateOnPlayerKill="5" ZenDeductionRateOnMonsterKill="4" ZenDeductionRateOnPlayerKill="0" WarpChargeMultiplier="50" CanSummonByDarkLord="1" CanTeleportByMarry="1" Description="Murderer Level" />
 	</General>
 	
 	<ExpDeduction>

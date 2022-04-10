@@ -318,6 +318,7 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_MONSTER, 0,848,'Monster_(848)_Elite_Scorched_Warrior') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,849,'Monster_(849)_Elite_Scorched_Assassins') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,850,'Monster_(850)_Elite_Scorched Wizard') -- DropFunction /2/
+	
 -- Bags by Kevin Fernandez - Goldens
 	AddItemBag(BAG_MONSTER, 0, 43, 'zGMonster_(43)_Golden_Budge_Dragon');
 	AddItemBag(BAG_MONSTER, 0, 53, 'zGMonster_(53)_Golden_Titan');
@@ -351,6 +352,11 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_MONSTER, 0, 197, 'zMonster_(197)_Kundun4');
 	AddItemBag(BAG_MONSTER, 0, 267, 'zMonster_(267)_Kundun5');
 	AddItemBag(BAG_MONSTER, 0, 338, 'zMonster_(338)_Kundun6');
+	-- Bags by Omega Boss
+	AddItemBag(BAG_MONSTER, 0, 716, 'Monster_(716)_Core_Magriffy');
+	AddItemBag(BAG_MONSTER, 0, 734, 'Monster_(734)_Lord_of_Ferea');
+	AddItemBag(BAG_MONSTER, 0, 746, 'Monster_(746)_Knicks');
+	AddItemBag(BAG_MONSTER, 0, 794, 'Monster_(794)_God_of_Darkness'); 
 
 -- ====================================================================
 -- EventBags -- BagType, EventID, 0, 'FileName'
@@ -402,10 +408,7 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_EVENT, 52,0, 'Event_ChaosCastle(5)_Reward') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 53,0, 'Event_ChaosCastle(6)_Reward') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 54,0, 'Event_ChaosCastle(7)_Reward') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 55,0, 'Monster_(716)_Core_Magriffy') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 56,0, 'Monster_(734)_Lord_of_Ferea') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 57,0, 'Monster_(746)_Knicks') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 58,0, 'Monster_(794)_God_of_Darkness') -- DropFunction /3/
+
 -- 59 - 69
 	AddItemBag(BAG_EVENT, 70,0, 'Event_CW_Elf_Altar') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 71,0, 'Event_CW_Hero_List') -- DropFunction /3/
