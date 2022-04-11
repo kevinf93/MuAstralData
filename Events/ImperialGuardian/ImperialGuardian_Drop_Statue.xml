@@ -58,8 +58,8 @@
 		<Section ID="1" PlayerMinLevel="101" PlayerMaxLevel="200" />
 		<Section ID="2" PlayerMinLevel="201" PlayerMaxLevel="300" />
 		<Section ID="3" PlayerMinLevel="301" PlayerMaxLevel="400" />
-		<Section ID="4" PlayerMinLevel="401" PlayerMaxLevel="MAX" />
-		<!-- <Section ID="5" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
+		<Section ID="4" PlayerMinLevel="401" PlayerMaxLevel="700" />
+		<Section ID="5" PlayerMinLevel="701" PlayerMaxLevel="MAX" />
 		<!-- <Section ID="6" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
 		<!-- <Section ID="7" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
 		<!-- <Section ID="8" PlayerMinLevel="0" PlayerMaxLevel="0" /> -->
@@ -72,7 +72,7 @@
 		<Section ID="2" MoneyCount="50000" />
 		<Section ID="3" MoneyCount="80000" />
 		<Section ID="4" MoneyCount="100000" />
-		<!-- <Section ID="5" MoneyCount="0 / /> -->
+		<Section ID="5" MoneyCount="200000" /> 
 		<!-- <Section ID="6" MoneyCount="0"  /> -->
 		<!-- <Section ID="7" MoneyCount="0"  /> -->
 		<!-- <Section ID="8" MoneyCount="0"  /> -->
@@ -120,7 +120,17 @@
 		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="40000" /> <!-- Jewel of Chaos -->
 		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="919988" /> <!-- Guardian Angel -->
 	</Section>
-	<Section ID="4" ItemDropCount="1"> <!-- 401~800 -->
+	<Section ID="4" ItemDropCount="1"> <!-- 401~700 -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="5" /> <!-- Jewel of Bless x10 -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="10" /> <!-- Jewel of Soul x10 -->
+		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="5000" /> <!-- Jewel of Bless -->
+		<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="10000" /> <!-- Jewel of Life -->
+		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="15000" /> <!-- Jewel of Soul -->
+		<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="20000" /> <!-- Jewel of Creation -->
+		<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="50000" /> <!-- Jewel of Chaos -->
+		<Item Cat="13" Index="1"  MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="899985" /> <!-- Guardian Angel -->
+	</Section>
+	<Section ID="5" ItemDropCount="1"> <!-- 701~MAX -->
 		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="5" /> <!-- Jewel of Bless x10 -->
 		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Durability="10" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="10" /> <!-- Jewel of Soul x10 -->
 		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" DropRate="5000" /> <!-- Jewel of Bless -->
