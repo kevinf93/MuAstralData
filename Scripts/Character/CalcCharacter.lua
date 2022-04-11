@@ -457,31 +457,31 @@ function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy,
 	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_KNIGHT) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_ELF) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_GLADIATOR) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_DARKLORD) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 3 + Strength / 4 + Command / 10
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 2 + Strength / 4 + Command / 10
 	elseif(Class == CLASS_SUMMONER) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		AttackSuccessRate = TotalLevel * 3 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 3 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_GROWLANCER) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.25 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.25 + Strength / 4
 	elseif(Class == CLASS_RUNEWIZARD) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_SLAYER) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.35 + Strength / 5.5
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 5.5
 	elseif(Class == CLASS_GUNCRUSHER) then
 		AttackSuccessRate = TotalLevel * 3 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_LIGHTWIZARD) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_LEMURIAMAGE) then
-		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 2
+		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 2
 	end
 	
 	return AttackSuccessRate
@@ -608,31 +608,31 @@ function CalcDefenseSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy
 	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
-		DefenseRate = Dexterity / 4 + 2 * TotalLevel
+		DefenseRate = Dexterity / 3 + 5 * TotalLevel
 	elseif(Class == CLASS_KNIGHT) then
-		DefenseRate = Dexterity / 2 + 2 * TotalLevel
+		DefenseRate = Dexterity / 1 + 5 * TotalLevel
 	elseif(Class == CLASS_ELF) then
-		DefenseRate = Dexterity / 10 + 2 * TotalLevel
+		DefenseRate = Dexterity / 8 + 5 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		DefenseRate = Dexterity / 4 + 2 * TotalLevel
+		DefenseRate = Dexterity / 3 + 5 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
-		DefenseRate = Dexterity / 2 + 2 * TotalLevel
+		DefenseRate = Dexterity / 1 + 5 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
-		DefenseRate = Dexterity / 2 + 2 * TotalLevel
+		DefenseRate = Dexterity / 1 + 5 * TotalLevel
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		DefenseRate = Dexterity / 5 + 1.5 * TotalLevel
+		DefenseRate = Dexterity / 4 + 4.5 * TotalLevel
 	elseif(Class == CLASS_GROWLANCER) then
-		DefenseRate = Dexterity / 5 + 2 * TotalLevel
+		DefenseRate = Dexterity / 4 + 5 * TotalLevel
 	elseif(Class == CLASS_RUNEWIZARD) then
-		DefenseRate = Dexterity / 3 + 2 * TotalLevel
+		DefenseRate = Dexterity / 2 + 5 * TotalLevel
 	elseif(Class == CLASS_SLAYER) then
-		DefenseRate = Dexterity / 7 + 2 * TotalLevel
+		DefenseRate = Dexterity / 6 + 5 * TotalLevel
 	elseif(Class == CLASS_GUNCRUSHER) then
-		DefenseRate = Dexterity / 3 + 2 * TotalLevel
+		DefenseRate = Dexterity / 2 + 5 * TotalLevel
 	elseif(Class == CLASS_LIGHTWIZARD) then
-		DefenseRate = Dexterity / 4 + 2 * TotalLevel
+		DefenseRate = Dexterity / 3 + 5 * TotalLevel
 	elseif(Class == CLASS_LEMURIAMAGE) then
-		DefenseRate = Dexterity / 3 + 2 * TotalLevel
+		DefenseRate = Dexterity / 2 + 5 * TotalLevel
 	end
 	
 	return DefenseRate
