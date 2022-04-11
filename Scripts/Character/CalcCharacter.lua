@@ -279,8 +279,8 @@ function GladiatorMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	
-	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
-	MagicDamageMax = Energy / 5 -- Maximum Magic Damage
+	MagicDamageMin = Energy / 8 -- Minimum Magic Damage
+	MagicDamageMax = Energy / 4 -- Maximum Magic Damage
 	
 	return MagicDamageMin, MagicDamageMax
 end
