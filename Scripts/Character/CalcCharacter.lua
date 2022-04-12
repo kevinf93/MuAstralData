@@ -52,15 +52,15 @@ function KnightDamageCalc(Strength, Dexterity, Vitality, Energy, IsStrongBeliefA
 	local AttackDamageMaxRight = 0
 	
 	if (IsStrongBeliefActive == 1) then
-		AttackDamageMinLeft = Strength / 6 -- Minimum Left Hand Damage
-		AttackDamageMinRight = Strength / 6 -- Minimum Right Hand Damage
-		AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
-		AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
+		AttackDamageMinLeft = Strength / 5 -- Minimum Left Hand Damage
+		AttackDamageMinRight = Strength / 5 -- Minimum Right Hand Damage
+		AttackDamageMaxLeft = Strength / 3 -- Maximum Left Hand Damage
+		AttackDamageMaxRight = Strength / 3 -- Maximum Right Hand Damage
 	else
-		AttackDamageMinLeft = Strength / 9 -- Minimum Left Hand Damage
-		AttackDamageMinRight = Strength / 9 -- Minimum Right Hand Damage
-		AttackDamageMaxLeft = Strength / 6 -- Maximum Left Hand Damage
-		AttackDamageMaxRight = Strength / 6 -- Maximum Right Hand Damage
+		AttackDamageMinLeft = Strength / 8 -- Minimum Left Hand Damage
+		AttackDamageMinRight = Strength / 8 -- Minimum Right Hand Damage
+		AttackDamageMaxLeft = Strength / 7 -- Maximum Left Hand Damage
+		AttackDamageMaxRight = Strength / 7 -- Maximum Right Hand Damage
 	end
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
@@ -257,8 +257,8 @@ function KnightMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	
-	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
-	MagicDamageMax = Energy / 4 -- Maximum Magic Damage
+	MagicDamageMin = Energy / 8 -- Minimum Magic Damage
+	MagicDamageMax = Energy / 3 -- Maximum Magic Damage
 	
 	return MagicDamageMin, MagicDamageMax
 end
