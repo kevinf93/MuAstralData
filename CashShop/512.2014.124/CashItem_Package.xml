@@ -11,18 +11,104 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 <CashItemPackage>
-	<Package GUID="0" ID="0" ItemSequence="0" UniqueID1="912" UniqueID2="1151" Description="Lemuria Character Card" />
-	<Package GUID="1" ID="0" ItemSequence="1" UniqueID1="911" UniqueID2="1149" Description="Light Wizard Character Card" />
-	<Package GUID="2" ID="0" ItemSequence="2" UniqueID1="910" UniqueID2="1147" Description="Gun Crusher Character Card" />
-	<Package GUID="3" ID="0" ItemSequence="3" UniqueID1="909" UniqueID2="1145" Description="Slayer Character Card" />
-	<Package GUID="4" ID="0" ItemSequence="4" UniqueID1="908" UniqueID2="1143" Description="Grow Lancer Character Card" />
-	<Package GUID="5" ID="0" ItemSequence="5" UniqueID1="907" UniqueID2="1141" Description="RageFighter Character Card" />
-	<Package GUID="6" ID="0" ItemSequence="6" UniqueID1="906" UniqueID2="1139" Description="Summoner Character Card" />
-	<Package GUID="0" ID="1" ItemSequence="0" UniqueID1="31" UniqueID2="53" Description="Summoner Character Card" />
-	<Package GUID="1" ID="1" ItemSequence="1" UniqueID1="907" UniqueID2="1141" Description="RageFighter Character Card" />
-	<Package GUID="2" ID="1" ItemSequence="2" UniqueID1="908" UniqueID2="1143" Description="Grow Lancer Character Card" />
-	<Package GUID="3" ID="1" ItemSequence="3" UniqueID1="909" UniqueID2="1145" Description="Slayer Character Card" />
-	<Package GUID="4" ID="1" ItemSequence="4" UniqueID1="910" UniqueID2="1147" Description="Gun Crusher Character Card" />
-	<Package GUID="5" ID="1" ItemSequence="5" UniqueID1="911" UniqueID2="1149" Description="Light Wizard Character Card" />
-	<Package GUID="6" ID="1" ItemSequence="6" UniqueID1="914" UniqueID2="1153" Description="Rune Wizard Character Card" />
+	<Package GUID="0" ID="1" ItemSequence="0" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="1" ID="1" ItemSequence="1" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="2" ID="1" ItemSequence="2" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="3" ID="1" ItemSequence="3" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="4" ID="1" ItemSequence="4" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="5" ID="1" ItemSequence="5" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="6" ID="1" ItemSequence="6" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="7" ID="1" ItemSequence="7" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="8" ID="1" ItemSequence="8" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="9" ID="1" ItemSequence="9" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="10" ID="1" ItemSequence="10" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="11" ID="1" ItemSequence="11" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="12" ID="1" ItemSequence="12" UniqueID1="1138" UniqueID2="1604" Description="B.O.L. (Middle)" />
+	<Package GUID="0" ID="11" ItemSequence="0" UniqueID1="1030" UniqueID2="1408" Description="Pet Panda x30 Dias" />
+	<Package GUID="1" ID="11" ItemSequence="1" UniqueID1="1031" UniqueID2="1409" Description="Panda Ring x30 dias" />
+	<Package GUID="2" ID="11" ItemSequence="2" UniqueID1="1036" UniqueID2="1414" Description="Seal of Divinity x15 Dias" />
+	<Package GUID="3" ID="11" ItemSequence="3" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="4" ID="11" ItemSequence="4" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="0" ID="12" ItemSequence="0" UniqueID1="1030" UniqueID2="1408" Description="Pet Panda x30 Dias" />
+	<Package GUID="1" ID="12" ItemSequence="1" UniqueID1="1031" UniqueID2="1409" Description="Panda Ring x30 dias" />
+	<Package GUID="2" ID="12" ItemSequence="2" UniqueID1="1036" UniqueID2="1414" Description="Seal of Divinity x15 Dias" />
+	<Package GUID="3" ID="12" ItemSequence="3" UniqueID1="1039" UniqueID2="1417" Description="Hawk Figurine x30 Dias" />
+	<Package GUID="4" ID="12" ItemSequence="4" UniqueID1="1040" UniqueID2="1418" Description="Goat Figurine x30 Dias" />
+	<Package GUID="5" ID="12" ItemSequence="5" UniqueID1="1041" UniqueID2="1419" Description="Scroll of Battle x30 Dias" />
+	<Package GUID="6" ID="12" ItemSequence="6" UniqueID1="1042" UniqueID2="1420" Description="Scroll of Strength x30 Dias" />
+	<Package GUID="7" ID="12" ItemSequence="7" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="8" ID="12" ItemSequence="8" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="9" ID="12" ItemSequence="9" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="10" ID="12" ItemSequence="10" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="0" ID="13" ItemSequence="0" UniqueID1="1046" UniqueID2="1424" Description="Pet Skeleton x30 Dias" />
+	<Package GUID="1" ID="13" ItemSequence="1" UniqueID1="1051" UniqueID2="1429" Description="Skeleton Ring x30 Dias" />
+	<Package GUID="2" ID="13" ItemSequence="2" UniqueID1="1074" UniqueID2="1482" Description="T. of Luck 10%" />
+	<Package GUID="3" ID="13" ItemSequence="3" UniqueID1="1074" UniqueID2="1482" Description="T. of Luck 10%" />
+	<Package GUID="4" ID="13" ItemSequence="4" UniqueID1="963" UniqueID2="1289" Description="T. of Chaos x1" />
+	<Package GUID="5" ID="13" ItemSequence="5" UniqueID1="963" UniqueID2="1289" Description="T. of Chaos x1" />
+	<Package GUID="6" ID="13" ItemSequence="6" UniqueID1="963" UniqueID2="1289" Description="T. of Chaos x1" />
+	<Package GUID="7" ID="13" ItemSequence="7" UniqueID1="1036" UniqueID2="1414" Description="Seal of Divinity x15 Dias" />
+	<Package GUID="8" ID="13" ItemSequence="8" UniqueID1="1039" UniqueID2="1417" Description="Hawk Figurine x30 Dias" />
+	<Package GUID="9" ID="13" ItemSequence="9" UniqueID1="1040" UniqueID2="1418" Description="Goat Figurine x30 Dias" />
+	<Package GUID="10" ID="13" ItemSequence="10" UniqueID1="1041" UniqueID2="1419" Description="Scroll of Battle x30 Dias" />
+	<Package GUID="11" ID="13" ItemSequence="11" UniqueID1="1042" UniqueID2="1420" Description="Scroll of Strength x30 Dias" />
+	<Package GUID="12" ID="13" ItemSequence="12" UniqueID1="1109" UniqueID2="1552" Description="T. of Guardian (1 Hora)" />
+	<Package GUID="13" ID="13" ItemSequence="13" UniqueID1="1109" UniqueID2="1552" Description="T. of Guardian (1 Hora)" />
+	<Package GUID="14" ID="13" ItemSequence="14" UniqueID1="1109" UniqueID2="1552" Description="T. of Guardian (1 Hora)" />
+	<Package GUID="15" ID="13" ItemSequence="15" UniqueID1="1109" UniqueID2="1552" Description="T. of Guardian (1 Hora)" />
+	<Package GUID="16" ID="13" ItemSequence="16" UniqueID1="1109" UniqueID2="1552" Description="T. of Guardian (1 Hora)" />
+	<Package GUID="17" ID="13" ItemSequence="17" UniqueID1="1087" UniqueID2="1508" Description="T. of Protection (1 Hora)" />
+	<Package GUID="18" ID="13" ItemSequence="18" UniqueID1="1087" UniqueID2="1508" Description="T. of Protection (1 Hora)" />
+	<Package GUID="19" ID="13" ItemSequence="19" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="20" ID="13" ItemSequence="20" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="21" ID="13" ItemSequence="21" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="22" ID="13" ItemSequence="22" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="23" ID="13" ItemSequence="23" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="24" ID="13" ItemSequence="24" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="25" ID="13" ItemSequence="25" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="26" ID="13" ItemSequence="26" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="27" ID="13" ItemSequence="27" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="28" ID="13" ItemSequence="28" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="29" ID="13" ItemSequence="29" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="30" ID="13" ItemSequence="30" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="31" ID="13" ItemSequence="31" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="32" ID="13" ItemSequence="32" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="0" ID="15" ItemSequence="0" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="1" ID="15" ItemSequence="1" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="2" ID="15" ItemSequence="2" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="3" ID="15" ItemSequence="3" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="4" ID="15" ItemSequence="4" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="5" ID="15" ItemSequence="5" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="6" ID="15" ItemSequence="6" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="7" ID="15" ItemSequence="7" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="8" ID="15" ItemSequence="8" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="9" ID="15" ItemSequence="9" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="10" ID="15" ItemSequence="10" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="11" ID="15" ItemSequence="11" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="0" ID="16" ItemSequence="0" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="1" ID="16" ItemSequence="1" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="2" ID="16" ItemSequence="2" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="3" ID="16" ItemSequence="3" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="4" ID="16" ItemSequence="4" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="5" ID="16" ItemSequence="5" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="6" ID="16" ItemSequence="6" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="7" ID="16" ItemSequence="7" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="8" ID="16" ItemSequence="8" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="9" ID="16" ItemSequence="9" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="10" ID="16" ItemSequence="10" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="11" ID="16" ItemSequence="11" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="12" ID="16" ItemSequence="12" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="13" ID="16" ItemSequence="13" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="14" ID="16" ItemSequence="14" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="15" ID="16" ItemSequence="15" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="16" ID="16" ItemSequence="16" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="17" ID="16" ItemSequence="17" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="18" ID="16" ItemSequence="18" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="19" ID="16" ItemSequence="19" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="20" ID="16" ItemSequence="20" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="21" ID="16" ItemSequence="21" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="22" ID="16" ItemSequence="22" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="23" ID="16" ItemSequence="23" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="24" ID="16" ItemSequence="24" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
+	<Package GUID="25" ID="16" ItemSequence="25" UniqueID1="1141" UniqueID2="1607" Description="Muun Egg x1" />
 </CashItemPackage>
