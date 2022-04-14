@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~ For detailed explanation of the bags system refer to ### Item Bags System Description ###.txt included in \Data\ItemBags\
+-->
+
+<ItemBag>
+<BagConfig Name="Item_(13,350)_Muun_Egg" ItemRate="10000" SetItemRate="0" MasterySetItemInclude="0" MoneyDrop="0" IsPentagramForBeginnersDrop="0" BagUseEffect="-1" BagUseRate="10000" />
+<SummonBook Enable="0" DropRate="0" ItemCat="0" ItemIndex="0" />
+<AddCoin Enable="0" CoinType="0" CoinValue="0" />
+<Ruud GainRate="0" MinValue="1" MaxValue="10" />
+
+<DropAllow DW="1" DK="1" ELF="1" MG="1" DL="1" SU="1" RF="1" GL="1" RW="1" SLA="1" GC="1" LW="1" LM="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+	<!-- joyas normales 25%x2 -->
+	<Drop Rate="10000" Count="1">
+		<Item Cat="12" Index="15" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="2" />
+		<Item Cat="14" Index="16" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="2" />
+		<Item Cat="14" Index="22" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="2"/>
+		<Item Cat="12" Index="15" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="3" />
+		<Item Cat="14" Index="16" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="3" />
+		<Item Cat="14" Index="22" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="3"/>
+		<Item Cat="12" Index="15" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="4" />
+		<Item Cat="14" Index="16" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="4" />
+		<Item Cat="14" Index="22" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="4"/>
+	</Drop>
+	<!-- joyas servibles 25% -->
+	<Drop Rate="7500" Count="1">
+		<Item Cat="14" Index="13" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="2"/>
+		<Item Cat="14" Index="14" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="2"/>
+		<Item Cat="14" Index="13" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="3"/>
+		<Item Cat="14" Index="14" ItemMinLevel="2" ItemMaxLevel="4" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Durability="3"/>
+	</Drop>
+	<!-- Muun Normales 45%-->
+	<Drop Rate="5000" Count="1">
+		<!-- tier 1 -->
+			<Item Cat="13" Index="216" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Nymph -->
+		<!-- tier 2 -->
+			<Item Cat="13" Index="218" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Safi -->
+			<Item Cat="13" Index="225" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Paul -->
+			<Item Cat="13" Index="227" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Chiron -->
+			<Item Cat="13" Index="235" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Skull -->
+			<Item Cat="13" Index="237" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Pumpkin -->
+			<Item Cat="13" Index="243" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Lycan -->
+			<Item Cat="13" Index="245" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Torby -->
+			<Item Cat="13" Index="252" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Seiren -->
+			<Item Cat="13" Index="254" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Behemoth -->
+			<Item Cat="13" Index="258" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mino -->
+			<Item Cat="13" Index="260" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Hound -->
+			<Item Cat="13" Index="264" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Vogan -->
+			<Item Cat="13" Index="266" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Cyclop -->
+			<Item Cat="13" Index="272" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Hawk -->
+			<Item Cat="13" Index="274" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Muty -->
+			<Item Cat="13" Index="280" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Scolty -->
+			<Item Cat="13" Index="282" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Chafer -->
+			<Item Cat="13" Index="292" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Cheer Girl -->
+			<Item Cat="13" Index="294" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Sporty Girl -->
+			<Item Cat="13" Index="298" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Gaap -->
+			<Item Cat="13" Index="300" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Taaf -->
+			<Item Cat="13" Index="302" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Frozen -->
+			<Item Cat="13" Index="304" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Loor -->
+			<Item Cat="13" Index="310" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Songpyeon Rabbit -->
+			<Item Cat="13" Index="312" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mortar Rabbit -->
+			<Item Cat="13" Index="316" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Rainer -->
+			<Item Cat="13" Index="318" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Alkamo -->
+			<Item Cat="13" Index="322" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Kenturion -->
+			<Item Cat="13" Index="324" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Rocka -->
+			<Item Cat="13" Index="332" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Polar Beer -->
+			<Item Cat="13" Index="334" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Present -->
+			<Item Cat="13" Index="336" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Rockinghorse -->
+			<Item Cat="13" Index="340" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Lester -->
+			<Item Cat="13" Index="342" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Merino -->
+			<Item Cat="13" Index="346" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mutation -->
+			<Item Cat="13" Index="348" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Pider -->
+			<Item Cat="13" Index="411" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Branch -->
+			<Item Cat="13" Index="413" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Hook -->
+			<Item Cat="13" Index="417" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mandora -->
+			<Item Cat="13" Index="419" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Treat -->
+			<Item Cat="13" Index="423" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Freesia Spirit -->
+			<Item Cat="13" Index="423" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Cherry Blossom Spirit -->
+			<Item Cat="13" Index="429" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mammoth -->
+			<Item Cat="13" Index="431" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Walker -->
+			<Item Cat="13" Index="435" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Tube Girl -->
+			<Item Cat="13" Index="437" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Snorkeling Girl -->
+			<Item Cat="13" Index="441" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Lancer Soldier -->
+			<Item Cat="13" Index="443" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Bow Soldier -->
+			<Item Cat="13" Index="447" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Refear -->
+			<Item Cat="13" Index="449" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Axer -->
+			<Item Cat="13" Index="453" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Ghost -->
+			<Item Cat="13" Index="455" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mummified Boy -->
+			<Item Cat="13" Index="459" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Maple -->
+			<Item Cat="13" Index="461" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Ginkgo -->
+			<Item Cat="13" Index="482" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Christmas Tree -->
+			<Item Cat="13" Index="484" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Snowman -->
+			<Item Cat="13" Index="488" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- DJ Monkey -->
+			<Item Cat="13" Index="490" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Space Monkey -->
+			<Item Cat="13" Index="494" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Chocolate Cookie -->
+			<Item Cat="13" Index="496" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Heart Girl -->
+			<Item Cat="13" Index="500" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Lollipop Mama -->
+			<Item Cat="13" Index="502" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Sweet Muscle Man -->
+			<Item Cat="16" Index="2" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Geppeto -->
+			<Item Cat="16" Index="4" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Blue fairy -->
+			<Item Cat="16" Index="8" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Baby Bear -->
+			<Item Cat="16" Index="10" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Mama bear -->
+			<Item Cat="16" Index="14" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Treasure -->
+			<Item Cat="16" Index="16" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Treasure Hunter -->
+			<Item Cat="16" Index="20" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Grass Fairy -->
+			<Item Cat="16" Index="22" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Leaf Mage -->
+			<Item Cat="16" Index="26" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Rio -->
+			<Item Cat="16" Index="28" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Bateria -->
+			<Item Cat="16" Index="41" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Chicken -->
+			<Item Cat="16" Index="43" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Rooster -->
+			<Item Cat="16" Index="73" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Beagle -->
+			<Item Cat="16" Index="75" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Bulldog -->
+			<Item Cat="16" Index="79" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Figure Queen -->
+			<Item Cat="16" Index="81" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Hockey bear -->
+			<Item Cat="16" Index="91" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Goalkeeper -->
+			<Item Cat="16" Index="93" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Referee -->
+	</Drop>
+	<!-- Muun Premium 4% -->
+	<Drop Rate="400" Count="1">
+		<!-- tier 3 -->
+			<Item Cat="13" Index="212" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Luki -->
+			<Item Cat="13" Index="214" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Tony -->
+			<Item Cat="16" Index="30" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Reporter -->
+		<!-- tier 4 -->
+			<Item Cat="13" Index="457" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Chrysanthemum -->
+			<Item Cat="13" Index="480" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" /> <!-- Toy Soldier -->
+	</Drop>
+	<!-- Jewel of Reset 1% -->
+	<Drop Rate="100" Count="1">
+		<Item Cat="20" Index="500" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
+	</Drop>
+</DropAllow>
+</ItemBag>

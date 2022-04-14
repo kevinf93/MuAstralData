@@ -191,7 +191,7 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_INVENTORY, MakeItemID(13,220),0, 'Item_(13,220,0)_Lucky_Bag_Egg') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(13,221),0, 'Item_(13,221,0)_Fire_Flame_Ghost_Egg') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(13,222),0, 'Item_(13,222,0)_Golden_Goblin_Egg') -- DropFunction /4/	
-	AddItemBag(BAG_INVENTORY, MakeItemID(13,350),0, 'Item_(13,350,0)_Roomy_Egg') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(13,350),0, 'Item_(13,350,0)_Muun_Egg') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,282),0, 'Item_(14,282,0)_Mastery_Box_(Minor)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,283),0, 'Item_(14,283,0)_Mastery_Box_(Standard)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,284),0, 'Item_(14,284,0)_Mastery_Box_(Greater)') -- DropFunction /4/

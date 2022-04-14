@@ -142,7 +142,7 @@ function ComboSkillDamage(Strength, Dexterity, Vitality, Energy, InDamage)
 end
 
 -- SkillID: 731, Ice Blood
-function GladiatorIceBloodCalcDamageAndDot(InDamage, Energy)
+function GladiatorIceBloodCalcDamageAndDot(InDamage, Strength, Energy)
 	local OutDamage = InDamage * 2
 	local SuccessRate = 6
 	local DebuffTime = 10
@@ -781,11 +781,11 @@ function GrowLancerMagicPin(InDamage, Dexterity, SkillTreeBonus, BarrageCount)
 	local OutDamage = 0
 	
 	if (BarrageCount == 1) then
-		OutDamage = (InDamage * 0.8) * (Dexterity / 10 + 97 + SkillTreeBonus) / 110.0
+		OutDamage = (InDamage * 0.8) * (Dexterity / 10 + 97 + SkillTreeBonus) / 100.0
 	elseif (BarrageCount == 2) then
-		OutDamage = (InDamage * 1.0) * (Dexterity / 10 + 97 + SkillTreeBonus) / 110.0
+		OutDamage = (InDamage * 1.0) * (Dexterity / 10 + 97 + SkillTreeBonus) / 100.0
 	elseif (BarrageCount == 3) then
-		OutDamage = (InDamage * 1.1) * (Dexterity / 10 + 97 + SkillTreeBonus) / 110.0
+		OutDamage = (InDamage * 1.1) * (Dexterity / 10 + 97 + SkillTreeBonus) / 100.0
 	end
 
 	return OutDamage
@@ -1110,9 +1110,9 @@ function LightWizardDragonViolentCalc(InDamage, Strength, Dexterity, Vitality, E
 	local OutDamage = 0
 	
 	if (BarrageCount == 1) then
-		OutDamage = (InDamage * 0.8) * ((Energy / 50) + 150) / 100
+		OutDamage = (InDamage * 1.0) * ((Energy / 50) + 200) / 100
 	elseif (BarrageCount == 2) then
-		OutDamage = (InDamage * 1.0) * ((Energy / 50) + 150) / 100
+		OutDamage = (InDamage * 1.0) * ((Energy / 50) + 200) / 100
 	end
 
 	return OutDamage

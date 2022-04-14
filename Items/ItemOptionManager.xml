@@ -138,7 +138,7 @@
 
 	<Section ID="12">
 		<Item Cat="13" Index="62" Option1="6" Value1="50" Option2="53" Value2="5" Time="1800" /> <!-- Seal of Healing -->
-		<Item Cat="13" Index="63" Option1="7" Value1="150" Option2="54" Value2="5" Time="1800" /> <!-- Seal of Divinity -->
+		<Item Cat="13" Index="63" Option1="7" Value1="50" Option2="54" Value2="5" Time="1800" /> <!-- Seal of Divinity -->
 	</Section>
 
 	<Section ID="13">
