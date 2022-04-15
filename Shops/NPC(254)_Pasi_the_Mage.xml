@@ -13,21 +13,21 @@
 <Shop>
 	<Tab Id="1">
 		<!-- Sphinx Mask-->
-		<Item Cat="7" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Sphinx Armor-->
-		<Item Cat="8" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Sphinx Pants-->
-		<Item Cat="9" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Sphinx Gloves-->
-		<Item Cat="10" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Sphinx Boots-->
-		<Item Cat="11" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="7" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Scroll of Meteorite-->
 		<Item Cat="15" Index="1" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Skull Staff-->
-		<Item Cat="5" Index="0" Level="6" Durability="23" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="5" Index="0" Level="6" Durability="23" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Serpent Staff-->
-		<Item Cat="5" Index="2" Level="6" Durability="53" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="5" Index="2" Level="6" Durability="53" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 	</Tab>
 	<Tab Id="2" />
 	<Tab Id="3" />
