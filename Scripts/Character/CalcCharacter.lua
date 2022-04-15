@@ -584,7 +584,7 @@ function CalcAttackSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy,
 	elseif(Class == CLASS_SUMMONER) then
 		AttackRate = Dexterity * 2.5 + 3 * TotalLevel
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		AttackRate = Dexterity * 2.6 + 2.6 * TotalLevel
+		AttackRate = Dexterity * 1 + 1 * TotalLevel
 	elseif(Class == CLASS_GROWLANCER) then
 		AttackRate = Dexterity * 2.5 + 3 * TotalLevel
 	elseif(Class == CLASS_RUNEWIZARD) then
@@ -614,7 +614,7 @@ function CalcDefenseSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy
 	elseif(Class == CLASS_ELF) then
 		DefenseRate = Dexterity / 8 + 5 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		DefenseRate = Dexterity / 3 + 5 * TotalLevel
+		DefenseRate = Dexterity * 3 + 5 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
 		DefenseRate = Dexterity / 1 + 5 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
