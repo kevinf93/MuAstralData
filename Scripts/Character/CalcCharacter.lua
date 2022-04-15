@@ -614,7 +614,7 @@ function CalcDefenseSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy
 	elseif(Class == CLASS_ELF) then
 		DefenseRate = Dexterity / 8 + 5 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		DefenseRate = Dexterity * 3 + 5 * TotalLevel
+		DefenseRate = Dexterity * 10 + 5 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
 		DefenseRate = Dexterity / 1 + 5 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
