@@ -13,21 +13,21 @@
 <Shop>
 	<Tab Id="1">
 		<!-- gl -->
-		<Item Cat="7" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="8" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="9" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="10" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="11" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="92" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!--  -->
-		<Item Cat="3" Index="13" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="3" Index="13" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- sl -->
-		<Item Cat="7" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="8" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="9" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="10" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="11" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="175" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!--  -->
-		<Item Cat="0" Index="0" Level="6" Durability="-1" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="0" Index="0" Level="6" Durability="-1" Skill="1" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 	</Tab>
 	<Tab Id="2" />
 	<Tab Id="3" />

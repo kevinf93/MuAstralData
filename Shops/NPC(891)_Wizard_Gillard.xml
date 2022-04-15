@@ -12,29 +12,29 @@
 -->
 <Shop>
 	<Tab Id="1">
-		<Item Cat="7" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="8" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="9" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="10" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="11" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="253" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Glimmer Helmet-->
-		<Item Cat="7" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="7" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Glimmer Armor-->
-		<Item Cat="8" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="8" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Glimmer Pants-->
-		<Item Cat="9" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="9" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Glimmer Gloves-->
-		<Item Cat="10" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="10" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Glimmer Boots-->
-		<Item Cat="11" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="11" Index="236" Level="6" Durability="39" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Shining Bird Law Book-->
 		<Item Cat="15" Index="47" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Marvel Burst Law Book-->
 		<Item Cat="15" Index="51" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Basic Magic Book-->
-		<Item Cat="5" Index="69" Level="6" Durability="68" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="5" Index="69" Level="6" Durability="68" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- Royal Orb-->
-		<Item Cat="5" Index="82" Level="6" Durability="68" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="5" Index="82" Level="6" Durability="68" Skill="0" Luck="1" Option="1" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 	</Tab>
 	<Tab Id="2" />
 	<Tab Id="3" />
