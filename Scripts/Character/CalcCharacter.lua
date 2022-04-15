@@ -463,7 +463,7 @@ function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy,
 	elseif(Class == CLASS_ELF) then
 		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
 	elseif(Class == CLASS_GLADIATOR) then
-		AttackSuccessRate = TotalLevel * 4 + Dexterity * 1.35 + Strength / 4
+		AttackSuccessRate = TotalLevel * 1 + Dexterity * 1 + Strength / 1
 	elseif(Class == CLASS_DARKLORD) then
 		AttackSuccessRate = TotalLevel * 4 + Dexterity * 2 + Strength / 4 + Command / 10
 	elseif(Class == CLASS_SUMMONER) then
@@ -578,7 +578,7 @@ function CalcAttackSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy,
 	elseif(Class == CLASS_ELF) then
 		AttackRate = Dexterity * 0.6 + 3 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		AttackRate = Dexterity * 1 + 1 * TotalLevel
+		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
 		AttackRate = Dexterity * 3 + 3 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
