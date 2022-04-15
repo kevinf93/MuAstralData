@@ -12,7 +12,6 @@
 -->
 
 <Shop>
-<Shop>
 	<Tab Id="1">
 		<!-- Apple-->
 		<Item Cat="14" Index="0" Level="0" Durability="30" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="0" />
