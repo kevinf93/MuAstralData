@@ -25,6 +25,7 @@
 		<Item Cat="5" Index="0" Level="4" Durability="39" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<Item Cat="6" Index="0" Level="4" Durability="39" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<Item Cat="5" Index="81" Level="4" Durability="39" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="5" Index="68" Level="4" Durability="39" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		
 	</Tab>
 	<Tab Id="2" />
