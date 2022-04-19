@@ -72,6 +72,6 @@
 -->
 
 <BuffList>
-	<Buff Id="4" EffectType="21" EffectValue="25" Duration="10000" Name="Mana Shield" />
-	<Buff Id="4" EffectType="15" EffectValue="25" Duration="10000" Name="Wizzardy" />
+	<Buff Id="4" EffectType="21" EffectValue="5" Duration="10000" Name="Mana Shield" />
+	<Buff Id="4" EffectType="15" EffectValue="5" Duration="10000" Name="Wizzardy" />
 </BuffList>

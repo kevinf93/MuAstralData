@@ -72,6 +72,6 @@
 -->
 
 <BuffList>
-	<Buff Id="8" EffectType="4" EffectValue="1000" Duration="1800" Name="Swell Life" />
-	<Buff Id="131" EffectType="74" EffectValue="100" Duration="1800" Name="Increase Block" />
+	<Buff Id="8" EffectType="4" EffectValue="500" Duration="1800" Name="Swell Life" />
+	<Buff Id="131" EffectType="74" EffectValue="5" Duration="1800" Name="Increase Block" />
 </BuffList>
