@@ -24,6 +24,7 @@
 		<Item Cat="11" Index="5" Level="4" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<!-- katana-->
 		<Item Cat="0" Index="3" Level="4" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
+		<Item Cat="0" Index="32" Level="4" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 	</Tab>
 	<Tab Id="2" />
 	<Tab Id="3" />

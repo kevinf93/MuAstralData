@@ -21,14 +21,6 @@
 		<!--  -->
 		<Item Cat="3" Index="13" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 		<Item Cat="6" Index="29" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<!-- sl -->
-		<Item Cat="7" Index="174" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="8" Index="174" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="9" Index="174" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="10" Index="174" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<Item Cat="11" Index="174" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
-		<!--  -->
-		<Item Cat="0" Index="3" Level="4" Durability="-1" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" Elemental="0" Serial="1" />
 	</Tab>
 	<Tab Id="2">
 		<!-- sl -->
