@@ -75,7 +75,7 @@
   <DropItem MonsterMinLevel="103" MonsterMaxLevel="117" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="18" MinLevel="6" MaxLevel="6" Durability="0" Element="0" Duration="0" Rate="100000" Name="Devil's Key" />
   <DropItem MonsterMinLevel="118" MonsterMaxLevel="600" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="18" MinLevel="7" MaxLevel="7" Durability="0" Element="0" Duration="0" Rate="100000" Name="Devil's Key" />
   <DropItem MonsterMinLevel="110" MonsterMaxLevel="600" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="430" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="1000" Name="Elena's Letter" />
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="215" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="50000" Name="Card Piece" />
+  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="215" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="1500" Name="Card Piece" />
 	<!-- poderes: Scrolls -->
   <DropItem MonsterMinLevel="25" MonsterMaxLevel="35" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="15" Index="0" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2500" Name="Scroll of Poison" />
   <DropItem MonsterMinLevel="17" MonsterMaxLevel="28" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="15" Index="1" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2500" Name="Scroll of Meteorite" />
