@@ -51,7 +51,7 @@
 -->
 
 <ScrambleWords>
-	<Event Enable="0" MaxRounds="12" TimeToStartMinutes="1" MaxEventTimeMinutes="15" DifficultyLevelUp="4" NotifyWinner="1" />
+	<Event Enable="1" MaxRounds="12" TimeToStartMinutes="1" MaxEventTimeMinutes="15" DifficultyLevelUp="4" NotifyWinner="1" />
 	<ChatMessage Enable="1" Red="45" Green="15" Blue="175" />
 	
 	<DifficultyLevelReward>
