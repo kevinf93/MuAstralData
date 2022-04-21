@@ -3546,7 +3546,7 @@
 		</Spot>
 		<Spot Type="1" Description="Multi-Spawn"> <!-- Auto Quest -->
 			<Spawn Index="359" Distance="5" StartX="110" StartY="79" EndX="110" EndY="79" Dir="-1" Count="3" /> <!-- Twin Tale -->
-			<Spawn Index="358" Distance="5" StartX="110" StartY="79" EndX="110" EndY="79" Dir="-1" Count="30" /> <!-- Persona -->
+			<Spawn Index="358" Distance="5" StartX="110" StartY="79" EndX="110" EndY="79" Dir="-1" Count="8" /> <!-- Persona -->
 			<Spawn Index="360" Distance="5" StartX="153" StartY="138" EndX="153" EndY="138" Dir="-1" Count="3" /> <!-- Dreadfear -->
 		</Spot>	
 	</Map>
