@@ -95,7 +95,7 @@
 -->
 
 <ExpSystem CalcType="3" NonVipAdjuster="0.0" PartyExpGainRange="9" DebugMode="0">
-	<StaticExp Normal="25" Master="15" Majestic="5.0" Event="0.0" Quest="1.0" OffLevel="20.0" />
+	<StaticExp Normal="25" Master="99999" Majestic="99999.0" Event="0.0" Quest="1.0" OffLevel="20.0" />
 	<PartyRegAddExp One="1.0" Two="1.9" Three="2.8" Four="3.7" Five="4.6" />
 	<PartySetAddExp Two="1.9" Three="2.8" Four="3.7" Five="4.6" />
 	
@@ -186,7 +186,7 @@
 			<Range MinReset="3" MaxReset="3" MinLevel="601" MaxLevel="700" NormalExp="1" MasterExp="6.95" MajesticExp="1" OffLevelExp="1"/>
 			<Range MinReset="3" MaxReset="3" MinLevel="701" MaxLevel="800" NormalExp="1" MasterExp="5.79" MajesticExp="4.05" OffLevelExp="1"/>
 			<!-- majestic -->
-			<Range MinReset="3" MaxReset="3" MinLevel="801" MaxLevel="900" NormalExp="1" MasterExp="1" MajesticExp="4.05" OffLevelExp="1"/>
+			<Range MinReset="3" MaxReset="5" MinLevel="801" MaxLevel="900" NormalExp="1" MasterExp="4" MajesticExp="4.05" OffLevelExp="1"/> 	<!-- modifique solo para testear -->
 			<Range MinReset="3" MaxReset="3" MinLevel="901" MaxLevel="1000" NormalExp="1" MasterExp="1" MajesticExp="3.48" OffLevelExp="1"/>
 			<Range MinReset="3" MaxReset="3" MinLevel="1001" MaxLevel="1050" NormalExp="1" MasterExp="1" MajesticExp="3.01" OffLevelExp="1"/>
 			<Range MinReset="3" MaxReset="3" MinLevel="1051" MaxLevel="1100" NormalExp="1" MasterExp="1" MajesticExp="2.55" OffLevelExp="1"/>
