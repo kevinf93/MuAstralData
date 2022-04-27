@@ -75,7 +75,7 @@
 
 <LastManStanding Enable="0" DieCount="2" MinPlayers="2" MaxPlayers="500">
 	<Event Duration="15" TownSpawn="1" MapNumber="6" StartX="146" StartY="78" EndX="160" EndY="60" />
-	<Registration Time="15" MapNumber="0" NPCIndex="258" PosX="145" PosY="140" Dir="1" ReqMoney="1000000" ReqSpecialItem="0" SpecialItemCount="1" ItemCat="14" ItemIndex="160" />
+	<Registration Time="15" MapNumber="0" NPCIndex="258" PosX="145" PosY="140" Dir="1" ReqMoney="1000000" ReqSpecialItem="0" SpecialItemCount="0" ItemCat="14" ItemIndex="160" />
 
 	<Schedule>
 		<Start Hour="12" Minute="0" />
@@ -86,9 +86,9 @@
 	</Schedule>
 
 	<RoomSettings>
-		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="0"  MaxReset="10" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="63"  StartY="204" EndX="64"  EndY="220" /> <!-- Arena Room 1 -->
-		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="11" MaxReset="20" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="99"  StartY="205" EndX="105" EndY="222" /> <!-- Arena Room 2 -->
-		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="21" MaxReset="30" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="136" StartY="203" EndX="142" EndY="221" /> <!-- Arena Room 3 -->
+		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="0"  MaxReset="1" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="63"  StartY="204" EndX="64"  EndY="220" /> <!-- Arena Room 1 -->
+		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="2" MaxReset="3" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="99"  StartY="205" EndX="105" EndY="222" /> <!-- Arena Room 2 -->
+		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="4" MaxReset="5" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="136" StartY="203" EndX="142" EndY="221" /> <!-- Arena Room 3 -->
 		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="31" MaxReset="35" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="171" StartY="202" EndX="177" EndY="220" /> <!-- Arena Room 4 -->
 		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="36" MaxReset="40" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="209" StartY="202" EndX="215" EndY="221" /> <!-- Arena Room 5 -->
 		<Room MinLevel="MinLvlForPK" MaxLevel="MAX" MinReset="41" MaxReset="45" MinGrandReset="0" MaxGrandReset="999" MapNumber="6" StartX="209" StartY="161" EndX="214" EndY="179" /> <!-- Arena Room 6 -->

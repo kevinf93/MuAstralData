@@ -109,7 +109,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS 
 -->
 
-<EvolutionMonster Enable="0" EventType="0">
+<EvolutionMonster Enable="1" EventType="0">
 	<EventTimeSettings>
 		<Run Type="0" RewardWaitTime="10" NotifyTime="13" MonsterRegenTime="15" />
 		<Run Type="1" RewardWaitTime="2" NotifyTime="3" MonsterRegenTime="4" />

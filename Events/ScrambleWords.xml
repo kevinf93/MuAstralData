@@ -55,8 +55,10 @@
 	<ChatMessage Enable="1" Red="45" Green="15" Blue="175" />
 	
 	<DifficultyLevelReward>
-		<Difficulty Level="1" ItemCat="14" ItemIndex="14" ItemLevel="0" ItemDurability="1" />
-		<Difficulty Level="2" ItemCat="14" ItemIndex="13" ItemLevel="0" ItemDurability="1" />
+		<Difficulty Level="1" ItemCat="14" ItemIndex="15" ItemLevel="9" ItemDurability="1" />
+		<Difficulty Level="2" ItemCat="14" ItemIndex="15" ItemLevel="10" ItemDurability="1" />
+		<Difficulty Level="3" ItemCat="14" ItemIndex="15" ItemLevel="11" ItemDurability="1" />
+		<Difficulty Level="4" ItemCat="14" ItemIndex="15" ItemLevel="12" ItemDurability="1" />
 	</DifficultyLevelReward>
 
 	<Schedule>
@@ -69,32 +71,52 @@
 
 	<WordsList>
 		<Difficulty Level="1">
-			<Word Data="scramble" Hint="" />
-			<Word Data="alcohol" Hint="" />
-			<Word Data="programmer" Hint="" />
-			<Word Data="calculator" Hint="" />
-			<Word Data="computer" Hint="" />
-			<Word Data="spaghetti" Hint="" />
-			<Word Data="camera" Hint="" />
-			<Word Data="mobile" Hint="" />
-			<Word Data="bible" Hint="" />
-			<Word Data="lighter" Hint="" />
-			<Word Data="cinema" Hint="" />
-			<Word Data="forest" Hint="" />
+			<Word Data="auto" Hint="" />
+			<Word Data="base" Hint="" />
+			<Word Data="coma" Hint="" />
+			<Word Data="gala" Hint="" />
+			<Word Data="kilo" Hint="" />
+			<Word Data="mate" Hint="" />
+			<Word Data="solo" Hint="" />
+			<Word Data="taxi" Hint="" />
+			<Word Data="club" Hint="" />
 		</Difficulty>
 		<Difficulty Level="2">
-			<Word Data="difficulty" Hint="" />
-			<Word Data="laser" Hint="" />
-			<Word Data="island" Hint="" />
-			<Word Data="romeo" Hint="" />
-			<Word Data="universe" Hint="" />
-			<Word Data="pillow" Hint="" />
-			<Word Data="starship" Hint="" />
-			<Word Data="original" Hint="" />
-			<Word Data="vegetable" Hint="" />
-			<Word Data="fruits" Hint="" />
-			<Word Data="newspaper" Hint="" />
-			<Word Data="wire" Hint="" />
+			<Word Data="actor" Hint="" />
+			<Word Data="angel" Hint="" />
+			<Word Data="cable" Hint="" />
+			<Word Data="legal" Hint="" />
+			<Word Data="civil" Hint="" />
+			<Word Data="mafia" Hint="" />
+			<Word Data="altar" Hint="" />
+			<Word Data="error" Hint="" />
+			<Word Data="fatal" Hint="" />
+			<Word Data="grave" Hint="" />
+			<Word Data="piano" Hint="" />
+		</Difficulty>
+		<Difficulty Level="3">
+			<Word Data="doctor" Hint="" />
+			<Word Data="banana" Hint="" />
+			<Word Data="animal" Hint="" />
+			<Word Data="carton" Hint="" />
+			<Word Data="factor" Hint="" />
+			<Word Data="global" Hint="" />
+			<Word Data="global" Hint="" />
+			<Word Data="horror" Hint="" />
+			<Word Data="manual" Hint="" />
+			<Word Data="verbal" Hint="" />
+		</Difficulty>
+		<Difficulty Level="4">
+			<Word Data="alcohol" Hint="" />
+			<Word Data="balance" Hint="" />
+			<Word Data="capital" Hint="" />
+			<Word Data="popular" Hint="" />
+			<Word Data="digital" Hint="" />
+			<Word Data="evasion" Hint="" />
+			<Word Data="federal" Hint="" />
+			<Word Data="pension" Hint="" />
+			<Word Data="lateral" Hint="" />
+			<Word Data="opinion" Hint="" />
 		</Difficulty>
 	</WordsList>
 </ScrambleWords>
