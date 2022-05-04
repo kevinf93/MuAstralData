@@ -5609,24 +5609,110 @@
 	</Map>
 	<Map Number="37" Name="Kanturu">
 		<Spot Type="1" Description="Multi-Spawn">
-			<!--(350) Berserker [Lv.100]-->
+<!--(350) Berserker [Lv.100]-->
 			<Spawn Index="350" Distance="5" StartX="165" StartY="36" EndX="165" EndY="36" Dir="-1" Count="5" />
 			<!--(350) Berserker [Lv.100]-->
 			<Spawn Index="350" Distance="5" StartX="73" StartY="166" EndX="73" EndY="166" Dir="-1" Count="3" />
+			<!--(350) Berserker [Lv.100]-->
+			<Spawn Index="350" Distance="5" StartX="88" StartY="29" EndX="89" EndY="32" Dir="-1" Count="5" />
+			<!--(350) Berserker [Lv.100]-->
+			<Spawn Index="350" Distance="5" StartX="73" StartY="22" EndX="76" EndY="25" Dir="-1" Count="5" />
+			<!--(350) Berserker [Lv.100]-->
+			<Spawn Index="350" Distance="5" StartX="57" StartY="28" EndX="61" EndY="31" Dir="-1" Count="5" />
+			<!--(350) Berserker [Lv.100]-->
+			<Spawn Index="350" Distance="5" StartX="39" StartY="33" EndX="42" EndY="35" Dir="-1" Count="7" />
+			<!--(350) Berserker [Lv.100]-->
+			<Spawn Index="350" Distance="5" StartX="45" StartY="47" EndX="48" EndY="51" Dir="-1" Count="7" />
+			<!--(350) Berserker [Lv.100]-->
+			<Spawn Index="350" Distance="5" StartX="32" StartY="57" EndX="33" EndY="59" Dir="-1" Count="9" />
 			<!--(351) Splinter Wolf [Lv.80]-->
-			<Spawn Index="351" Distance="5" StartX="51" StartY="231" EndX="51" EndY="231" Dir="-1" Count="5" />
+			<Spawn Index="351" Distance="5" StartX="34" StartY="230" EndX="36" EndY="233" Dir="-1" Count="5" />
+			<!--(351) Splinter Wolf [Lv.80]-->
+			<Spawn Index="351" Distance="5" StartX="52" StartY="229" EndX="53" EndY="230" Dir="-1" Count="5" />
+			<!--(351) Splinter Wolf [Lv.80]-->
+			<Spawn Index="351" Distance="5" StartX="66" StartY="231" EndX="67" EndY="233" Dir="-1" Count="5" />
+			<!--(351) Splinter Wolf [Lv.80]-->
+			<Spawn Index="351" Distance="5" StartX="84" StartY="235" EndX="85" EndY="237" Dir="-1" Count="7" />
+			<!--(351) Splinter Wolf [Lv.80]-->
+			<Spawn Index="351" Distance="5" StartX="104" StartY="235" EndX="106" EndY="238" Dir="-1" Count="9" />
 			<!--(352) Iron Rider [Lv.82]-->
 			<Spawn Index="352" Distance="5" StartX="197" StartY="194" EndX="197" EndY="194" Dir="-1" Count="5" />
+			<!--(352) Iron Rider [Lv.82]-->
+			<Spawn Index="352" Distance="5" StartX="138" StartY="220" EndX="140" EndY="224" Dir="-1" Count="5" />
+			<!--(352) Iron Rider [Lv.82]-->
+			<Spawn Index="352" Distance="5" StartX="147" StartY="237" EndX="149" EndY="240" Dir="-1" Count="5" />
+			<!--(352) Iron Rider [Lv.82]-->
+			<Spawn Index="352" Distance="5" StartX="157" StartY="196" EndX="160" EndY="200" Dir="-1" Count="5" />
+			<!--(352) Iron Rider [Lv.82]-->
+			<Spawn Index="352" Distance="5" StartX="175" StartY="198" EndX="179" EndY="203" Dir="-1" Count="7" />
+			<!--(352) Iron Rider [Lv.82]-->
+			<Spawn Index="352" Distance="5" StartX="176" StartY="224" EndX="179" EndY="229" Dir="-1" Count="7" />
+			<!--(352) Iron Rider [Lv.82]-->
+			<Spawn Index="352" Distance="5" StartX="200" StartY="186" EndX="203" EndY="189" Dir="-1" Count="9" />
 			<!--(353) Satyros [Lv.85]-->
 			<Spawn Index="353" Distance="5" StartX="230" StartY="85" EndX="230" EndY="85" Dir="-1" Count="5" />
+			<!--(353) Satyros [Lv.85]-->
+			<Spawn Index="353" Distance="5" StartX="168" StartY="160" EndX="171" EndY="163" Dir="-1" Count="5" />
+			<!--(353) Satyros [Lv.85]-->
+			<Spawn Index="353" Distance="5" StartX="193" StartY="150" EndX="196" EndY="153" Dir="-1" Count="5" />
+			<!--(353) Satyros [Lv.85]-->
+			<Spawn Index="353" Distance="5" StartX="215" StartY="158" EndX="218" EndY="161" Dir="-1" Count="5" />
+			<!--(353) Satyros [Lv.85]-->
+			<Spawn Index="353" Distance="5" StartX="208" StartY="134" EndX="211" EndY="139" Dir="-1" Count="7" />
+			<!--(353) Satyros [Lv.85]-->
+			<Spawn Index="353" Distance="5" StartX="231" StartY="127" EndX="234" EndY="133" Dir="-1" Count="7" />
+			<!--(353) Satyros [Lv.85]-->
+			<Spawn Index="353" Distance="5" StartX="224" StartY="114" EndX="226" EndY="119" Dir="-1" Count="9" />
 			<!--(354) Blade Hunter [Lv.88]-->
 			<Spawn Index="354" Distance="5" StartX="206" StartY="38" EndX="206" EndY="38" Dir="-1" Count="5" />
+			<!--(354) Blade Hunter [Lv.88]-->
+			<Spawn Index="354" Distance="5" StartX="229" StartY="100" EndX="232" EndY="103" Dir="-1" Count="5" />
+			<!--(354) Blade Hunter [Lv.88]-->
+			<Spawn Index="354" Distance="5" StartX="228" StartY="84" EndX="230" EndY="87" Dir="-1" Count="5" />
+			<!--(354) Blade Hunter [Lv.88]-->
+			<Spawn Index="354" Distance="5" StartX="222" StartY="68" EndX="226" EndY="72" Dir="-1" Count="5" />
+			<!--(354) Blade Hunter [Lv.88]-->
+			<Spawn Index="354" Distance="5" StartX="225" StartY="53" EndX="228" EndY="56" Dir="-1" Count="7" />
+			<!--(354) Blade Hunter [Lv.88]-->
+			<Spawn Index="354" Distance="5" StartX="217" StartY="38" EndX="220" EndY="41" Dir="-1" Count="7" />
+			<!--(354) Blade Hunter [Lv.88]-->
+			<Spawn Index="354" Distance="5" StartX="201" StartY="37" EndX="203" EndY="39" Dir="-1" Count="9" />
 			<!--(355) Kentauros [Lv.93]-->
 			<Spawn Index="355" Distance="5" StartX="115" StartY="59" EndX="115" EndY="59" Dir="-1" Count="5" />
+			<!--(355) Kentauros [Lv.93]-->
+			<Spawn Index="355" Distance="5" StartX="182" StartY="21" EndX="185" EndY="24" Dir="-1" Count="5" />
+			<!--(355) Kentauros [Lv.93]-->
+			<Spawn Index="355" Distance="5" StartX="185" StartY="8" EndX="188" EndY="11" Dir="-1" Count="5" />
+			<!--(355) Kentauros [Lv.93]-->
+			<Spawn Index="355" Distance="5" StartX="164" StartY="35" EndX="166" EndY="38" Dir="-1" Count="5" />
+			<!--(355) Kentauros [Lv.93]-->
+			<Spawn Index="355" Distance="5" StartX="157" StartY="18" EndX="159" EndY="21" Dir="-1" Count="7" />
+			<!--(355) Kentauros [Lv.93]-->
+			<Spawn Index="355" Distance="5" StartX="150" StartY="47" EndX="152" EndY="50" Dir="-1" Count="7" />
+			<!--(355) Kentauros [Lv.93]-->
+			<Spawn Index="355" Distance="5" StartX="134" StartY="41" EndX="138" EndY="44" Dir="-1" Count="9" />
 			<!--(356) Gigantis [Lv.98]-->
 			<Spawn Index="356" Distance="5" StartX="85" StartY="24" EndX="85" EndY="24" Dir="-1" Count="5" />
+			<!--(356) Gigantis [Lv.98]-->
+			<Spawn Index="356" Distance="5" StartX="144" StartY="12" EndX="145" EndY="14" Dir="-1" Count="5" />
+			<!--(356) Gigantis [Lv.98]-->
+			<Spawn Index="356" Distance="5" StartX="123" StartY="21" EndX="126" EndY="23" Dir="-1" Count="5" />
+			<!--(356) Gigantis [Lv.98]-->
+			<Spawn Index="356" Distance="5" StartX="118" StartY="40" EndX="119" EndY="42" Dir="-1" Count="5" />
+			<!--(356) Gigantis [Lv.98]-->
+			<Spawn Index="356" Distance="5" StartX="109" StartY="60" EndX="113" EndY="63" Dir="-1" Count="7" />
+			<!--(356) Gigantis [Lv.98]-->
+			<Spawn Index="356" Distance="5" StartX="91" StartY="65" EndX="95" EndY="69" Dir="-1" Count="7" />
+			<!--(356) Gigantis [Lv.98]-->
+			<Spawn Index="356" Distance="5" StartX="75" StartY="57" EndX="77" EndY="59" Dir="-1" Count="9" />
 			<!--(357) Genocider [Lv.105]-->
 			<Spawn Index="357" Distance="5" StartX="60" StartY="45" EndX="60" EndY="45" Dir="-1" Count="5" />
+			<!--(357) Genocider [Lv.105]-->
+			<Spawn Index="357" Distance="5" StartX="39" StartY="72" EndX="40" EndY="74" Dir="-1" Count="5" />
+			<!--(357) Genocider [Lv.105]-->
+			<Spawn Index="357" Distance="5" StartX="26" StartY="82" EndX="31" EndY="84" Dir="-1" Count="5" />
+			<!--(357) Genocider [Lv.105]-->
+			<Spawn Index="357" Distance="5" StartX="50" StartY="94" EndX="56" EndY="100" Dir="-1" Count="9" />
 			<!--(554) Kentauros Warrior [Lv.126]-->
 			<Spawn Index="554" Distance="5" StartX="132" StartY="127" EndX="132" EndY="127" Dir="-1" Count="3" />
 			<!--(555) Gigantis Warrior [Lv.128]-->
@@ -6067,10 +6153,40 @@
 		<Spot Type="1" Description="Multi-Spawn">
 			<!--(358) Persona [Lv.118]-->
 			<Spawn Index="358" Distance="5" StartX="110" StartY="79" EndX="110" EndY="79" Dir="-1" Count="8" />
+			<!--(358) Persona [Lv.118]-->
+			<Spawn Index="358" Distance="5" StartX="119" StartY="78" EndX="123" EndY="81" Dir="2" Count="5" />
+			<!--(358) Persona [Lv.118]-->
+			<Spawn Index="358" Distance="5" StartX="135" StartY="77" EndX="137" EndY="80" Dir="2" Count="5" />
+			<!--(358) Persona [Lv.118]-->
+			<Spawn Index="358" Distance="5" StartX="148" StartY="80" EndX="149" EndY="82" Dir="2" Count="5" />
+			<!--(358) Persona [Lv.118]-->
+			<Spawn Index="358" Distance="5" StartX="160" StartY="93" EndX="162" EndY="95" Dir="2" Count="7" />
+			<!--(358) Persona [Lv.118]-->
+			<Spawn Index="358" Distance="5" StartX="143" StartY="100" EndX="145" EndY="102" Dir="2" Count="7" />
+			<!--(358) Persona [Lv.118]-->
+			<Spawn Index="358" Distance="5" StartX="178" StartY="96" EndX="180" EndY="100" Dir="2" Count="9" />
 			<!--(359) Twin Tale [Lv.117]-->
 			<Spawn Index="359" Distance="5" StartX="110" StartY="79" EndX="110" EndY="79" Dir="-1" Count="3" />
+			<!--(359) Twin Tale [Lv.117]-->
+			<Spawn Index="359" Distance="5" StartX="95" StartY="103" EndX="97" EndY="105" Dir="2" Count="5" />
+			<!--(359) Twin Tale [Lv.117]-->
+			<Spawn Index="359" Distance="5" StartX="98" StartY="77" EndX="100" EndY="80" Dir="2" Count="5" />
+			<!--(359) Twin Tale [Lv.117]-->
+			<Spawn Index="359" Distance="5" StartX="123" StartY="95" EndX="126" EndY="97" Dir="2" Count="5" />
 			<!--(360) Dreadfear [Lv.119]-->
 			<Spawn Index="360" Distance="5" StartX="153" StartY="138" EndX="153" EndY="138" Dir="-1" Count="3" />
+			<!--(360) Dreadfear [Lv.119]-->
+			<Spawn Index="360" Distance="5" StartX="169" StartY="126" EndX="172" EndY="130" Dir="2" Count="5" />
+			<!--(360) Dreadfear [Lv.119]-->
+			<Spawn Index="360" Distance="5" StartX="152" StartY="127" EndX="155" EndY="130" Dir="2" Count="5" />
+			<!--(360) Dreadfear [Lv.119]-->
+			<Spawn Index="360" Distance="5" StartX="136" StartY="157" EndX="140" EndY="158" Dir="2" Count="5" />
+			<!--(360) Dreadfear [Lv.119]-->
+			<Spawn Index="360" Distance="5" StartX="133" StartY="134" EndX="136" EndY="137" Dir="2" Count="7" />
+			<!--(360) Dreadfear [Lv.119]-->
+			<Spawn Index="360" Distance="5" StartX="116" StartY="128" EndX="119" EndY="132" Dir="2" Count="7" />
+			<!--(360) Dreadfear [Lv.119]-->
+			<Spawn Index="360" Distance="5" StartX="105" StartY="145" EndX="108" EndY="149" Dir="2" Count="9" />
 		</Spot>
 		<Spot Type="2" Description="Single Point Monsters">
 			<!--(105) Canon Trap [Lv.80]-->

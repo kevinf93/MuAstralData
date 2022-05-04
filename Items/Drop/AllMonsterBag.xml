@@ -187,12 +187,12 @@
 	<DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="13" Index="1" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="2500" Name="Imp" />
 	<DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="13" Index="2" MinLevel="0" MaxLevel="0" Durability="0" Duration="0" Rate="1000" Name="Horn of Uniria" />
   <!-- Creado por Kevin :D -->
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="22" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="500" Name="Jewel of Creation" />
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="16" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="400" Name="Jewel of Life" />
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="15" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="350" Name="Jewel of Chaos" />
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="14" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="300" Name="Jewel of Soul" />
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="13" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="220" Name="Jewel of Bless" />
+  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="22" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="400" Name="Jewel of Creation" />
+  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="16" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="300" Name="Jewel of Life" />
+  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="12" Index="15" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="250" Name="Jewel of Chaos" />
+  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="14" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="200" Name="Jewel of Soul" />
+  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="14" Index="13" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="120" Name="Jewel of Bless" />
   <!-- Drop Jewel of Reset (Krash Games) 0.025 Posibilidad -->
-  <DropItem MonsterMinLevel="-1" MonsterMaxLevel="-1" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="20" Index="500" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="25" Name="Jewel of Reset (Krash Games)" />
+  <DropItem MonsterMinLevel="85" MonsterMaxLevel="1400" PlayerMinLevel="-1" PlayerMaxLevel="-1" Cat="20" Index="500" MinLevel="0" MaxLevel="0" Durability="0" Element="0" Duration="0" Rate="25" Name="Jewel of Reset (Krash Games)" />
   <!--  -->
 </AllMonsterItemDrop>
