@@ -43,10 +43,22 @@
 //	Luck: If set then reward item may come with luck on basis of LuckRate value, 0/1
 //	Option: If set then reward item may come with option (random up to 16 or 28 depending on server settings) on basis of SkillRate value, 0/1
 //	Exc:
-//		~ -1: no exc option
-//		~ -2: random count of random options, based on rates from ExcellentOptions.xml
-//		~ -3; X: Specified count of random options, the 'X' defines count of excellent options, max 9, options selection based on rates from ExcellentOptions.xml
-//		~ X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//		Excellent Options:
+//			-1: No exc option
+//			-2: Random count of random options (based on rates from ExcellentOptions.xml)
+//			-3;X: Specified count of random options, the 'X' defines count of excellent options, max 9 (options selection based on rates from ExcellentOptions.xml)
+//			X;X;X;X;X;X;X;X;X: Defines excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//		Grade Options (4th Wings):
+//			-1: No grade option
+//			-2: Random count of random options (based on rates from ItemGradeOption.xml)
+//			-3;X: Specified count of random options, the 'X' defines count of grade options, max 4 (options selection based on rates from ItemGradeOption.xml)
+//			ID1;LV1;ID2;LV2;ID3;LV3;ID4;LV4: Defines grade option index and option level, the 'IDX' is grade option index and LVX is grade option level based on Index and GradeXVal (0-9) from ItemGradeOption.xml, maximum 4 options can be defined
+//		Guardian Items:
+//			-1: No option
+//			-2;X: Random count of random options (based on rates from GuardianItemOption.xml), the 'X' takes value 0 or 1, determining whether to generate random elite option or not
+//			-3;X;Y: Specified count of random options, the 'X' defines count of options, max 4, the 'Y' takes value 0 or 1, determining whether to generate random elite option or not
+//			X;X;X;X;Y: Defines specific options, the 'X' is guardian regular option index from GuardianItemOption.xml::OptionList section, maximum 4 options can be defined, -1 if not applies, the Y is elite option index from GuardianItemOption.xml::EliteOptionList, must be defined as 5th argument, -1 if not applies
+//
 //	SetItem: Determines whether reward item should be a set item (random, basing on base item type), 0/1
 //	SocketCount:
 //		~ 0: no socket
@@ -79,17 +91,17 @@
 
 <MiracleBoxShop Enable="1">
 	<RewardSettings>
-		<Section ID="0" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="1" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="2" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="3" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="4" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="5" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="150000" /> <!-- n/1000000 -->
-		<Section ID="6" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="7" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="8" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="1000000" /> <!-- n/1000000 -->
-		<Section ID="9" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
-		<Section ID="10" SkillRate="850000" LuckRate="650000" OptionRate="500000" ExcRate="60000" /> <!-- n/1000000 -->
+		<Section ID="0" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="1" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="2" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="3" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="4" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="5" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="6" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="7" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="8" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="9" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
+		<Section ID="10" SkillRate="5000" LuckRate="3500" OptionRate="3000" ExcRate="100" /> <!-- n/1000000 -->
 	</RewardSettings>
 	<ItemRewardList>
 		<Section ID="0" Active="1"  Name="Moss Sword Box">
@@ -97,23 +109,17 @@
 				<Item ItemCat="-1" ItemIndex="-1" Cost="1000000" />
 			</Input>
 			<Reward>
-				<!-- exe -->
-				<Item Cat="2" Index="5" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Crystal Sword -->
-				<Item Cat="0" Index="25" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Sword Dancer -->
-				<Item Cat="0" Index="16" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Sword of Destruction -->
-				<Item Cat="3" Index="9" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Bill of Balrog -->
-				<Item Cat="0" Index="21" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Dark Reign Blade -->
-				<Item Cat="0" Index="66" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Flat sword -->
-				<!-- talisman -->
-				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3000" /> <!-- Talisman of Luck -->
-				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1500" /> <!-- Talisman of Chaos Assembly -->
-				<!-- jewels -->
-				<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- jewel of bless -->
-				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- jewel of soul -->
-				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of life -->
-				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of chaos -->
-				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of creation -->
-				<!--  -->
+				<Item Cat="2" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Crystal Sword -->
+				<Item Cat="0" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Sword Dancer -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Chaos Assembly -->
+				<Item Cat="0" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Sword of Assassin -->
+				<Item Cat="3" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Bill of Balrog -->
+				<Item Cat="2" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Crystal Sword -->
+				<Item Cat="0" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Dark Reign Blade -->
+				<Item Cat="2" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Crystal Sword -->
+				<Item Cat="0" Index="25" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Sword Dancer -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
 			</Reward>
 		</Section>
 		<Section ID="1" Active="1" Name="Moss Staff Box">
@@ -121,23 +127,17 @@
 				<Item ItemCat="-1" ItemIndex="-1" Cost="1000000" />
 			</Input>
 			<Reward>
-				<Item Cat="5" Index="11" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Staff of Kundun -->
-				<Item Cat="5" Index="4" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Gorgon Staff -->
-				<Item Cat="5" Index="0" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Skull Staff -->
-				<Item Cat="5" Index="3" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Thunder Staff -->
-				<Item Cat="5" Index="8" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Staff of Destruction -->
-				<Item Cat="5" Index="1" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Angelic Staff -->
-				<Item Cat="2" Index="28" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Elemental Mace -->
-				<!-- talisman -->
-				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3000" /> <!-- Talisman of Luck -->
-				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1500" /> <!-- Talisman of Chaos Assembly -->
-				<!-- jewels -->
-				<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- jewel of bless -->
-				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- jewel of soul -->
-				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of life -->
-				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of chaos -->
-				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of creation -->
-				<!--  -->
+				<Item Cat="5" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Staff of Kundun -->
+				<Item Cat="5" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Gorgon Staff -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Chaos Assembly -->
+				<Item Cat="5" Index="0" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Skull Staff -->
+				<Item Cat="5" Index="3" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Thunder Staff -->
+				<Item Cat="5" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Staff of Destruction -->
+				<Item Cat="5" Index="1" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Angelic Staff -->
+				<Item Cat="5" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Staff of Kundun -->
+				<Item Cat="5" Index="4" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Gorgon Staff -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
 			</Reward>
 		</Section>	
 		<Section ID="2" Active="1" Name="Moss Bow Box">
@@ -145,25 +145,19 @@
 				<Item ItemCat="-1" ItemIndex="-1" Cost="1000000" />
 			</Input>
 			<Reward>
-				<Item Cat="4" Index="22" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Albatross Bow -->
-				<Item Cat="4" Index="19" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Great Reign Crossbow -->
-				<Item Cat="4" Index="2" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Elven Bow -->
-				<Item Cat="4" Index="5" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Silver Bow -->
-				<Item Cat="4" Index="11" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Light Crossbow -->
-				<Item Cat="4" Index="16" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Saint Crossbow -->
-				<Item Cat="4" Index="22" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Albatross Bow -->
-				<Item Cat="4" Index="19" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Great Reign Crossbow -->
-				<Item Cat="4" Index="42" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!--  -->
-				<Item Cat="4" Index="43" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!--  -->
-				<!-- talisman -->
-				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3000" /> <!-- Talisman of Luck -->
-				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1500" /> <!-- Talisman of Chaos Assembly -->
-				<!-- jewels -->
-				<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- jewel of bless -->
-				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- jewel of soul -->
-				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of life -->
-				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of chaos -->
-				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of creation -->
+				<Item Cat="4" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Albatross Bow -->
+				<Item Cat="4" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Great Reign Crossbow -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Chaos Assembly -->
+				<Item Cat="4" Index="2" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Elven Bow -->
+				<Item Cat="4" Index="5" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Silver Bow -->
+				<Item Cat="4" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Light Crossbow -->
+				<Item Cat="4" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Saint Crossbow -->
+				<Item Cat="4" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Albatross Bow -->
+				<Item Cat="4" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Great Reign Crossbow -->
+				<Item Cat="4" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!--  -->
+				<Item Cat="4" Index="43" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!--  -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
 			</Reward>
 		</Section>			
 		<Section ID="3" Active="1" Name="Moss Scepter Box">
@@ -171,23 +165,17 @@
 				<Item ItemCat="-1" ItemIndex="-1" Cost="1000000" />
 			</Input>
 			<Reward>
-				<Item Cat="2" Index="11" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Lord Scepter -->
-				<Item Cat="2" Index="12" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Great Lord Scepter -->
-				<Item Cat="2" Index="15" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Shining Scepter -->
-				<Item Cat="2" Index="8" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Battle Scepter -->
-				<Item Cat="2" Index="9" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Master Scepter -->
-				<Item Cat="2" Index="10" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Great Scepter -->
-				<Item Cat="3" Index="17" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- prickle lance -->
-				<Item Cat="0" Index="32" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Sacred Gloves	-->
-				<!-- talisman -->
-				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3000" /> <!-- Talisman of Luck -->
-				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1500" /> <!-- Talisman of Chaos Assembly -->
-				<!-- jewels -->
-				<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- jewel of bless -->
-				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- jewel of soul -->
-				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of life -->
-				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of chaos -->
-				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of creation -->
+				<Item Cat="2" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Lord Scepter -->
+				<Item Cat="2" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Great Lord Scepter -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Chaos Assembly -->
+				<Item Cat="2" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Shining Scepter -->
+				<Item Cat="2" Index="8" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Battle Scepter -->
+				<Item Cat="2" Index="9" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Master Scepter -->
+				<Item Cat="2" Index="10" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Great Scepter -->
+				<Item Cat="2" Index="11" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Lord Scepter -->
+				<Item Cat="2" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Great Lord Scepter -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
 			</Reward>
 		</Section>				
 		<Section ID="4" Active="1" Name="Moss Stick Box">
@@ -195,22 +183,17 @@
 				<Item ItemCat="-1" ItemIndex="-1" Cost="1000000" />
 			</Input>
 			<Reward>
-				<Item Cat="5" Index="17" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Ancient Stick -->
-				<Item Cat="5" Index="18" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Demonic Stick -->
-				<Item Cat="5" Index="14" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Mystery Stick -->
-				<Item Cat="5" Index="15" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Violent Wind Stick -->
-				<Item Cat="5" Index="16" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Red Wing Stick -->
-				<Item Cat="5" Index="81" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Royal Orb		-->
-				<Item Cat="5" Index="18" MinLevel="1" MaxLevel="4" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100000" /> <!-- Demonic Stick -->
-				<!-- talisman -->
-				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="3000" /> <!-- Talisman of Luck -->
-				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1500" /> <!-- Talisman of Chaos Assembly -->
-				<!-- jewels -->
-				<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- jewel of bless -->
-				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- jewel of soul -->
-				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of life -->
-				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- jewel of chaos -->
-				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of creation -->
+				<Item Cat="5" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Ancient Stick -->
+				<Item Cat="5" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Demonic Stick -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Chaos Assembly -->
+				<Item Cat="5" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Mystery Stick -->
+				<Item Cat="5" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Violent Wind Stick -->
+				<Item Cat="5" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Red Wing Stick -->
+				<Item Cat="5" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Ancient Stick -->
+				<Item Cat="5" Index="17" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Ancient Stick -->
+				<Item Cat="5" Index="18" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Demonic Stick -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
 			</Reward>
 		</Section>	
 		<Section ID="5" Active="1" Name="Bless Jewelry Box">
@@ -218,34 +201,17 @@
 				<Item ItemCat="14" ItemIndex="13" Cost="1" />
 			</Input>
 			<Reward>
-				<!--  -->
-				<Item Cat="0" Index="19" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Sword of Archangel -->
-				<Item Cat="2" Index="13" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Cepter of Archangel -->
-				<Item Cat="2" Index="34" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Absolute of Archangel -->
-				<Item Cat="4" Index="18" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Crossbow of Archangel -->
-				<Item Cat="4" Index="46" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Gun of Archangel -->
-				<Item Cat="5" Index="10" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Staff of Archangel -->
-				<Item Cat="5" Index="36" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Stick of Archangel -->
-				<Item Cat="3" Index="26" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Absolute Lance of the Arch. -->
-				<Item Cat="5" Index="93" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Orb of Archangel -->
-				<Item Cat="0" Index="60" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine Claw of Archangel -->
-				<Item Cat="0" Index="76" MinLevel="0" MaxLevel="3" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Divine slayer of Archangel -->
-				<!-- buffo -->
-				<!-- <Item Cat="14" Index="280" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75000" /> Master EXP Potion (6) -->
-				<Item Cat="14" Index="402" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50000" /> <!-- Ruud Box (1000) -->
-				<Item Cat="14" Index="263" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="40000" /> <!-- Bless of Light (low) -->
-				<Item Cat="14" Index="264" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- Bless of Light (mid) -->
-				<Item Cat="14" Index="224" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="7500" /> <!-- Bless of Light (great) -->
-				<!-- cherry -->
-				<Item Cat="14" Index="85" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<Item Cat="14" Index="86" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom Rice Cake -->
-				<Item Cat="14" Index="87" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<!-- jewels -->
-				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of harmony -->
-				<Item Cat="14" Index="31" MinLevel="0" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of guardian -->
-				<!-- talisman -->
-				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="14000" /> <!-- Talisman of Luck -->
-				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="7000" /> <!-- Talisman of Chaos Assembly -->
+				<Item Cat="0" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50" /> <!-- Divine Sword of Archangel -->
+				<Item Cat="13" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Condor Feather -->
+				<Item Cat="13" Index="276" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Conqueror's Badge -->
+				<Item Cat="12" Index="457" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25" /> <!-- 700 Article Earning -->
+				<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
+				<Item Cat="14" Index="352" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Ruud Box (1000) -->
+				<Item Cat="14" Index="280" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Master EXP Potion (6) -->
+				<Item Cat="8" Index="95" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Sate Armor -->
+				<Item Cat="14" Index="224" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="400" /> <!-- Bless of Light (Greater) -->
+				<Item Cat="13" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!-- Pendant of Fire -->
+				<Item Cat="14" Index="86" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Cherry Blossom Rice Cake -->
 			</Reward>
 		</Section>				
 		<Section ID="6" Active="1" Name="Soul Jewelry Box">
@@ -253,26 +219,20 @@
 				<Item ItemCat="14" ItemIndex="14" Cost="1" />
 			</Input>
 			<Reward>
-				<!-- buffo -->
-				<!-- <Item Cat="14" Index="280" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75000" /> Master EXP Potion (6) -->
-				<Item Cat="14" Index="402" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50000" /> <!-- Ruud Box (1000) -->
-				<Item Cat="14" Index="263" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="30000" /> <!-- Bless of Light (low) -->
-				<Item Cat="14" Index="264" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- Bless of Light (mid) -->
-				<Item Cat="14" Index="224" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5500" /> <!-- Bless of Light (great) -->
-				<!-- cherry -->
-				<Item Cat="14" Index="85" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<Item Cat="14" Index="86" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom Rice Cake -->
-				<Item Cat="14" Index="87" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<!-- jewels -->
-				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of harmony -->
-				<Item Cat="14" Index="31" MinLevel="0" MaxLevel="2" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of guardian -->
-				<!--  -->
-				<Item Cat="12" Index="288" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50000" /> <!-- e. rune -->
-				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="11000" /> <!-- e. Talisman of Luck -->
-				<Item Cat="14" Index="190" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- e. Talisman of Chaos Assembly -->
+				<Item Cat="13" Index="268" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Dark Transformation Ring -->
+				<Item Cat="12" Index="212" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="-1" Rate="25" /> <!-- Arca's Prophecy -->
+				<Item Cat="14" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Jewel of Bless -->
+				<Item Cat="14" Index="189" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000" /> <!-- Elemental Talisman of Luck -->
+				<Item Cat="13" Index="479" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1500" /> <!-- Event Map Ticket -->
+				<Item Cat="14" Index="352" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Ruud Box(1000) -->
+				<Item Cat="14" Index="276" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Master EXP Potion (4) -->
+				<Item Cat="8" Index="36" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Iris Armor -->
+				<Item Cat="14" Index="224" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="10000" /> <!-- Bless of Light (Greater) -->
+				<Item Cat="13" Index="13" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000" /> <!-- Pendant of Fire -->
+				<Item Cat="14" Index="87" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Cherry Blossom Flower Petal -->
 			</Reward>
 		</Section>				
-		<Section ID="7" Active="0" Name="Miracle Coin Box">
+		<Section ID="7" Active="1" Name="Miracle Coin Box">
 			<Input>
 				<Item ItemCat="14" ItemIndex="413" Cost="1" />
 			</Input>
@@ -294,25 +254,17 @@
 				<Item ItemCat="14" ItemIndex="13" Cost="1" />
 			</Input>
 			<Reward>
-				<!--  -->
-				<Item Cat="12" Index="457" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2500" /> <!-- 700 Article Earning -->
-				<Item Cat="12" Index="449" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- 300 Article Earning -->
-				<Item Cat="13" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- pendant of Lightning -->
-				<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25000" /> <!-- Ring Of Fire -->
-				<!--  -->
-				<!-- buffo -->
-				<!-- <Item Cat="14" Index="280" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75000" /> Master EXP Potion (6) -->
-				<Item Cat="14" Index="402" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50000" /> <!-- Ruud Box (1000) -->
-				<Item Cat="14" Index="263" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="40000" /> <!-- Bless of Light (low) -->
-				<Item Cat="14" Index="264" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- Bless of Light (mid) -->
-				<Item Cat="14" Index="224" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="7500" /> <!-- Bless of Light (great) -->
-				<!-- cherry -->
-				<Item Cat="14" Index="85" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<Item Cat="14" Index="86" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom Rice Cake -->
-				<Item Cat="14" Index="87" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<!-- jewels -->
-				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of harmony -->
-				<Item Cat="14" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of guardian -->
+				<Item Cat="12" Index="457" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15" /> <!-- 700 Article Earning -->
+				<Item Cat="12" Index="449" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25" /> <!-- 300 Article Earning -->
+				<Item Cat="13" Index="12" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Necklace of Lightning -->
+				<Item Cat="13" Index="21" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000" /> <!-- Ring of Fire -->
+				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Soul -->
+				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Life -->
+				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Creation -->
+				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Jewel of Chaos -->
+				<Item Cat="14" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Guardian Jewel -->
+				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Jewel of Harmony -->
+				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Jewel of Harmony -->
 			</Reward>
 		</Section>
 		<Section ID="9" Active="1" Name="Guardian Box">
@@ -320,26 +272,20 @@
 				<Item ItemCat="14" ItemIndex="13" Cost="1" />
 			</Input>
 			<Reward>
-				<!--  -->
-				<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Seal of Ghost Horses -->
-				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="7500" /> <!-- Sculpture -->
-				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="20000" /> <!-- Guardian Enhanced Stone -->
-				<!-- buffo -->
-				<!-- <Item Cat="14" Index="280" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75000" /> Master EXP Potion (6) -->
-				<Item Cat="14" Index="402" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50000" /> <!-- Ruud Box (1000) -->
-				<Item Cat="14" Index="263" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="40000" /> <!-- Bless of Light (low) -->
-				<Item Cat="14" Index="264" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15000" /> <!-- Bless of Light (mid) -->
-				<Item Cat="14" Index="224" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="7500" /> <!-- Bless of Light (great) -->
-				<!-- cherry -->
-				<Item Cat="14" Index="85" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<Item Cat="14" Index="86" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom Rice Cake -->
-				<Item Cat="14" Index="87" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="250000" /> <!-- Cherry Blossom -->
-				<!-- jewels -->
-				<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of harmony -->
-				<Item Cat="14" Index="31" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="9500" /> <!-- jewel of guardian -->
+				<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="15" /> <!-- 700 Article Earning -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="25" /> <!-- 300 Article Earning -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Necklace of Lightning -->
+				<Item Cat="14" Index="372" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000" /> <!-- Ring of Fire -->
+				<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Soul -->
+				<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Life -->
+				<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Creation -->
+				<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Jewel of Chaos -->
+				<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Seal of Ghost Horses -->
+				<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Sculpture -->
+				<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Guardian Enhanced Stone -->
 			</Reward>
 		</Section>
-		<Section ID="10" Active="0" Name="Moss Miracle">
+		<Section ID="10" Active="1" Name="Moss Miracle">
 			<Input>
 				<Item ItemCat="14" ItemIndex="413" Cost="3" />
 				<Item ItemCat="14" ItemIndex="13" Cost="10" />
@@ -348,6 +294,7 @@
 				<Item Cat="12" Index="415" MinLevel="0" MaxLevel="0" Skill="0" Luck="1" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="50" /> <!-- Devil Wings -->
 				<Item Cat="13" Index="467" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Garuda's Feather -->
 				<Item Cat="13" Index="268" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Dark Transformation Ring -->
+				<Item Cat="14" Index="96" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Chaos Assembly -->
 				<Item Cat="14" Index="399" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- (Hero) Bloodangel Spirit -->
 				<Item Cat="19" Index="3" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Premium Box -->
 				<Item Cat="13" Index="510" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Three Vacancies -->
@@ -358,8 +305,8 @@
 			</Reward>
 		</Section>
 	</ItemRewardList>
-	<RewardNotificationItems>
-		<!-- <Item Cat="0" Index="19" Name="Divine Sword of Archangel" />
+	<RewardNotificationItems>							
+		<Item Cat="0" Index="19" Name="Divine Sword of Archangel" />
 		<Item Cat="2" Index="13" Name="Divine Scepter of Archangel" />
 		<Item Cat="4" Index="18" Name="Divine Crossbow of Archangel" />
 		<Item Cat="5" Index="10" Name="Divine Staff of Archangel" />
@@ -374,11 +321,10 @@
 		<Item Cat="12" Index="307" Name="Lemuria's Orb" />
 		<Item Cat="12" Index="308" Name="Norrwen's Bloodstring Lyra" />
 		<Item Cat="14" Index="53" Name="Talisman of Luck" />
+		<Item Cat="12" Index="457" Name="700 Article Earning" />
 		<Item Cat="12" Index="212" Name="Arca's Prophecy" />
 		<Item Cat="12" Index="213" Name="Antonia's Sword" />
-		<Item Cat="12" Index="214" Name="Kundun's Seal Scroll" /> -->
-		<Item Cat="12" Index="457" Name="700 Article Earning" />
-		<Item Cat="12" Index="449" Name="700 Article Earning" />
-		<Item Cat="13" Index="477" Name="Seal of Ghost Horses" />
+		<Item Cat="12" Index="214" Name="Kundun's Seal Scroll" />
+		<Item Cat="13" Index="268" Name="Dark Transformation Ring" />
 	</RewardNotificationItems>
 </MiracleBoxShop>	
